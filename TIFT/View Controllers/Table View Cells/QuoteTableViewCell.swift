@@ -14,8 +14,11 @@ class QuoteTableViewCell: UITableViewCell {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     
+    @IBOutlet weak var socialStack: UIStackView!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
+    
+    var quoteIndexPath = IndexPath()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +31,25 @@ class QuoteTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         quoteLabel.text = nil
         authorLabel.text = nil
+        quoteIndexPath = IndexPath.init()
     }
 
+    //MARK: - Actions
+    @IBAction func saveQuote() {
+        socialStack.isHidden = true
+        let notificationDict: [String: IndexPath] = ["indexPath": quoteIndexPath]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "saveQuote"),
+                                        object: nil,
+                                        userInfo: notificationDict)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.socialStack.isHidden = false
+        }
+    }
+    
+    @IBAction func shareQuote() {
+        let notificationDict: [String: String] = ["quote": quoteLabel.text!, "author": authorLabel.text!]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "shareQuote"),
+                                        object: nil,
+                                        userInfo: notificationDict)
+    }
 }

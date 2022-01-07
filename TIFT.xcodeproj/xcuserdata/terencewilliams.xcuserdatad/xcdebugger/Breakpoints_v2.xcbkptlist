@@ -7,7 +7,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B6C20B35-4709-4E30-A44C-C995E3DDC5AB"
+            uuid = "70BDE38B-EC4A-4FFD-BB55-2C772CEC9657"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -16,23 +16,39 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "scrollViewDidEndDragging(_:willDecelerate:)"
+            landmarkName = "shareQuote(_fromNotification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8905C6A2-F75F-4DBF-B192-DD16662CFE07"
+            uuid = "B43F5DE2-0431-4129-939B-A922FB47F21F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIFT/View Controllers/Table View Cells/QuoteTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "shareQuote()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17F428BC-C997-43B4-B084-3B53320846ED"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TIFT/View Controllers/QuoteViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "scrollViewDidEndDecelerating(_:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "saveQuote(_fromNotification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -22,6 +22,7 @@
 		6D30D2AB278545EC00A2FD84 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D2AA278545EC00A2FD84 /* Category.swift */; };
 		6D833B882786978300D31F4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D833B872786978300D31F4C /* HomeViewController.swift */; };
 		6D833B8B2786A84400D31F4C /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D833B8A2786A84400D31F4C /* QuoteTableViewCell.swift */; };
+		6D833B8E278785E200D31F4C /* HelperExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D833B8D278785E200D31F4C /* HelperExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		6D30D2AA278545EC00A2FD84 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		6D833B872786978300D31F4C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6D833B8A2786A84400D31F4C /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		6D833B8D278785E200D31F4C /* HelperExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				6D30D27127853E0F00A2FD84 /* AppDelegate.swift */,
 				6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */,
 				6D30D27727853E0F00A2FD84 /* Main.storyboard */,
+				6D833B8C278785CD00D31F4C /* Utilities */,
 				6D30D2A527853FF800A2FD84 /* Models */,
 				6D30D2A427853FEC00A2FD84 /* View Controllers */,
 				6D30D27D27853E1200A2FD84 /* Assets.xcassets */,
@@ -167,6 +170,14 @@
 				6D833B8A2786A84400D31F4C /* QuoteTableViewCell.swift */,
 			);
 			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		6D833B8C278785CD00D31F4C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6D833B8D278785E200D31F4C /* HelperExt.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				6D30D2A9278545C800A2FD84 /* Collection.swift in Sources */,
 				6D833B8B2786A84400D31F4C /* QuoteTableViewCell.swift in Sources */,
 				6D30D27227853E0F00A2FD84 /* AppDelegate.swift in Sources */,
+				6D833B8E278785E200D31F4C /* HelperExt.swift in Sources */,
 				6D30D27427853E0F00A2FD84 /* SceneDelegate.swift in Sources */,
 				6D30D2AB278545EC00A2FD84 /* Category.swift in Sources */,
 			);
