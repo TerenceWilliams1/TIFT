@@ -7,7 +7,9 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var quotes: [Quote] = []
     var collection: Collection!
@@ -15,10 +17,26 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchQuotes()
+
+        setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         fetchQuotes()
+    }
+    
+    func setupUI() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        
+        let highlightedQuoteCollectionViewCell = UINib(nibName: "HighlightedQuoteCollectionViewCell", bundle: nil)
+        collectionView.register(highlightedQuoteCollectionViewCell, forCellWithReuseIdentifier: "HighlightedQuoteCollectionViewCell")
     }
 
     func fetchQuotes() {
@@ -39,6 +57,7 @@ class HomeViewController: UIViewController {
                 self.collection = collectionData
                 DispatchQueue.main.async {
                     print("\n\n***Successfully loaded quotes***\n\n")
+                    self.collectionView.reloadData()
                     let generator = UIImpactFeedbackGenerator(style: .light)
                     generator.impactOccurred()
                 }
@@ -56,6 +75,25 @@ class HomeViewController: UIViewController {
         let category = collection.categories[0]
         quoteViewController.quotes = category.quotes
         self.navigationController?.pushViewController(quoteViewController, animated: true)
+    }
+    
+    //MARK: - Collection View
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let collection = collection {
+            return collection.highlights.count
+        }
+        return 0
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HighlightedQuoteCollectionViewCell", for: indexPath) as? HighlightedQuoteCollectionViewCell
+        
+        let highlight = collection.highlights[indexPath.row]
+        cell?.quoteLabel.text = highlight.quote
+        cell?.authorLabel.text = highlight.author
+        return cell!
     }
 
 }

@@ -24,18 +24,42 @@
                                     <action selector="exploreAll" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xcq-CA-An6"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nr5-Sw-S55">
+                                <rect key="frame" x="0.0" y="88" width="414" height="326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="326" id="06c-dU-HYy"/>
+                                    <constraint firstAttribute="width" secondItem="Nr5-Sw-S55" secondAttribute="height" multiplier="207:163" id="Y1J-p2-DpP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jb3-Zt-P3n">
+                                    <size key="itemSize" width="395" height="275"/>
+                                    <size key="estimatedItemSize" width="395" height="275"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8dM-MC-UQ0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0BY-Oa-Xdq"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Nr5-Sw-S55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6F9-82-Dpi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9R7-yM-QNV" secondAttribute="bottom" constant="270" id="IBu-M2-ILF"/>
                             <constraint firstItem="9R7-yM-QNV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="LRf-nc-btn"/>
                             <constraint firstItem="9R7-yM-QNV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbY-2m-Tzc"/>
                             <constraint firstItem="9R7-yM-QNV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="378" id="gJD-30-xfJ"/>
+                            <constraint firstItem="Nr5-Sw-S55" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kbw-LM-oyJ"/>
+                            <constraint firstItem="Nr5-Sw-S55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lQ2-AD-cXG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1k5-O6-bBl"/>
                     <connections>
+                        <outlet property="collectionView" destination="Nr5-Sw-S55" id="oPo-NS-CXS"/>
                         <segue destination="yEO-vz-crc" kind="push" id="V4f-1V-D2o"/>
                     </connections>
                 </viewController>
@@ -154,6 +178,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jev-Mk-pwA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

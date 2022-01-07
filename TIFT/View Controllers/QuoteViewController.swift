@@ -20,6 +20,8 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func setupData() {
+        self.table.decelerationRate = UIScrollView.DecelerationRate.fast
+
         NotificationCenter.default.addObserver(self, selector: #selector(self.shareQuote(_fromNotification:)),
                                                name: NSNotification.Name(rawValue: "shareQuote"),
                                                object: nil)
@@ -84,7 +86,9 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        centerTableView()
+        if !decelerate {
+            centerTableView()
+        }
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
