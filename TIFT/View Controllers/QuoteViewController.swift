@@ -17,6 +17,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         setupData()
+        scrollToQuote(_atIndex: index)
     }
     
     func setupData() {
@@ -34,7 +35,9 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //MARK: - Helpers
     func scrollToQuote(_atIndex index: Int) {
         let quoteIndexPath = IndexPath(row: index, section: 0)
-        table.scrollToRow(at: quoteIndexPath, at: UITableView.ScrollPosition.top, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.table.scrollToRow(at: quoteIndexPath, at: UITableView.ScrollPosition.top, animated: true)
+        }
     }
     
     //MARK: - Actions

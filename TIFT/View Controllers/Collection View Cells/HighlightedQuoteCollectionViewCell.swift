@@ -14,7 +14,11 @@ class HighlightedQuoteCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    override func prepareForReuse() {
+        quoteLabel.text = nil
+        authorLabel.text = nil
     }
 
 }

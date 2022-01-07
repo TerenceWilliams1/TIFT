@@ -85,7 +85,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         return 0
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HighlightedQuoteCollectionViewCell", for: indexPath) as? HighlightedQuoteCollectionViewCell
@@ -94,6 +93,24 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell?.quoteLabel.text = highlight.quote
         cell?.authorLabel.text = highlight.author
         return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let quoteViewController = storyBoard.instantiateViewController(withIdentifier: "QuoteViewController") as! QuoteViewController
+        quoteViewController.quotes = collection.highlights
+        quoteViewController.index = indexPath.row
+        self.navigationController?.pushViewController(quoteViewController, animated: true)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        self.collectionView.scrollToNearestVisibleCollectionViewCell()
+    }
+
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            self.collectionView.scrollToNearestVisibleCollectionViewCell()
+        }
     }
 
 }
