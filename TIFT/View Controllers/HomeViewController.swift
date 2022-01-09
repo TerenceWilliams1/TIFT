@@ -7,18 +7,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var table: UITableView!
     
     var quotes: [Quote] = []
     var collection: Collection!
+    var sections: [HomeSections] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchQuotes()
-
         setupUI()
+        setupData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,9 +35,17 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
+    }
+    
+    func setupData() {
+        sections = [.highlights, .categories]
         
-        let highlightedQuoteCollectionViewCell = UINib(nibName: "HighlightedQuoteCollectionViewCell", bundle: nil)
-        collectionView.register(highlightedQuoteCollectionViewCell, forCellWithReuseIdentifier: "HighlightedQuoteCollectionViewCell")
+        NotificationCenter.default.addObserver(self, selector: #selector(self.exploreQuotes(_fromNotification:)),
+                                               name: NSNotification.Name(rawValue: "exploreQuotes"),
+                                               object: nil)
+        
+        let highlightCell = UINib(nibName: "HighlightsTableViewCell", bundle: nil)
+        table.register(highlightCell, forCellReuseIdentifier: "HighlightsTableViewCell")
     }
 
     func fetchQuotes() {
@@ -57,7 +66,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
                 self.collection = collectionData
                 DispatchQueue.main.async {
                     print("\n\n***Successfully loaded quotes***\n\n")
-                    self.collectionView.reloadData()
+                    self.table.reloadData()
                     let generator = UIImpactFeedbackGenerator(style: .light)
                     generator.impactOccurred()
                 }
@@ -77,40 +86,52 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.navigationController?.pushViewController(quoteViewController, animated: true)
     }
     
-    //MARK: - Collection View
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let collection = collection {
-            return collection.highlights.count
-        }
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HighlightedQuoteCollectionViewCell", for: indexPath) as? HighlightedQuoteCollectionViewCell
-        
-        let highlight = collection.highlights[indexPath.row]
-        cell?.quoteLabel.text = highlight.quote
-        cell?.authorLabel.text = highlight.author
-        return cell!
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func exploreQuotes(quotes: [Quote], index: Int?) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let quoteViewController = storyBoard.instantiateViewController(withIdentifier: "QuoteViewController") as! QuoteViewController
-        quoteViewController.quotes = collection.highlights
-        quoteViewController.index = indexPath.row
+        quoteViewController.quotes = quotes
+        quoteViewController.index = index ?? 0
         self.navigationController?.pushViewController(quoteViewController, animated: true)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        self.collectionView.scrollToNearestVisibleCollectionViewCell()
+    @objc func exploreQuotes(_fromNotification notification: NSNotification) {
+        if let quotes = notification.userInfo?["quotes"] as? [Quote], let index = notification.userInfo?["index"] as? Int {
+            exploreQuotes(quotes: quotes, index: index)
+        }
     }
-
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if !decelerate {
-            self.collectionView.scrollToNearestVisibleCollectionViewCell()
+    
+    //MARK: - Table View
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch sections[indexPath.row] {
+        case .highlights:
+            return 275
+        case .categories:
+            return 0
+        }
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1 //sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch sections[indexPath.row] {
+        case .highlights:
+            let highlightCell = tableView.dequeueReusableCell(withIdentifier: "HighlightsTableViewCell", for: indexPath) as? HighlightsTableViewCell
+            if let collection = collection {
+                highlightCell?.quotes = collection.highlights
+            }
+            return highlightCell!
+            
+        case .categories:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+            return cell
         }
     }
 
+}
+
+enum HomeSections: String {
+    case highlights = "Highlights"
+    case categories = "Categories"
 }
