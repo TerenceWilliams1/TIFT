@@ -46,6 +46,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let highlightCell = UINib(nibName: "HighlightsTableViewCell", bundle: nil)
         table.register(highlightCell, forCellReuseIdentifier: "HighlightsTableViewCell")
+        
+        let categoriesTableViewCell = UINib(nibName: "CategoriesTableViewCell", bundle: nil)
+        table.register(categoriesTableViewCell, forCellReuseIdentifier: "CategoriesTableViewCell")
     }
 
     func fetchQuotes() {
@@ -106,11 +109,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         case .highlights:
             return 275
         case .categories:
-            return 0
+            return 465
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1 //sections.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -118,14 +121,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         switch sections[indexPath.row] {
         case .highlights:
             let highlightCell = tableView.dequeueReusableCell(withIdentifier: "HighlightsTableViewCell", for: indexPath) as? HighlightsTableViewCell
+            highlightCell?.titleLabel.text = "Highlights"
             if let collection = collection {
                 highlightCell?.quotes = collection.highlights
             }
             return highlightCell!
             
         case .categories:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
-            return cell
+            let categoriesCell = tableView.dequeueReusableCell(withIdentifier: "CategoriesTableViewCell", for: indexPath) as? CategoriesTableViewCell
+            categoriesCell?.titleLabel.text = "Categories"
+            if let collection = collection {
+                categoriesCell?.categories = collection.categories
+            }
+            return categoriesCell!
         }
     }
 

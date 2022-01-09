@@ -1,5 +1,5 @@
 //
-//  HighlightsTableViewCell.swift
+//  CategoriesTableViewCell.swift
 //  TIFT
 //
 //  Created by Terence Williams on 1/8/22.
@@ -7,18 +7,18 @@
 
 import UIKit
 
-class HighlightsTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
-
+class CategoriesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    var quotes: [Quote]?
+    var categories: [Category]?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let highlightedCollectionCellNib = UINib(nibName: "HighlightedQuoteCollectionViewCell", bundle: nil)
-        collectionView.register(highlightedCollectionCellNib, forCellWithReuseIdentifier: "HighlightedQuoteCollectionViewCell")
+        let categoryCollectionViewCell = UINib(nibName: "CategoryCollectionViewCell", bundle: nil)
+        collectionView.register(categoryCollectionViewCell, forCellWithReuseIdentifier: "CategoryCollectionViewCell")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,7 +28,7 @@ class HighlightsTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        quotes = nil
+        categories = nil
     }
     
     //MARK: - Collection View
@@ -37,22 +37,23 @@ class HighlightsTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return quotes?.count ?? 0
+        return categories?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HighlightedQuoteCollectionViewCell", for: indexPath) as? HighlightedQuoteCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as? CategoryCollectionViewCell
         
-        if let highlight = quotes?[indexPath.row] {
-            cell?.quoteLabel.text = highlight.quote
-            cell?.authorLabel.text = highlight.author
+        if let category = categories?[indexPath.row] {
+            cell?.titleLabl.text = category.title
+            cell?.iconView.image = UIImage(named: "")
         }
         return cell!
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let notificationDict: [String: Any] = ["quotes": quotes!, "index": indexPath.row]
+        let category = categories![indexPath.row]
+        let notificationDict: [String: Any] = ["quotes": category.quotes, "index": 0]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "exploreQuotes"),
                                         object: nil,
                                         userInfo: notificationDict)

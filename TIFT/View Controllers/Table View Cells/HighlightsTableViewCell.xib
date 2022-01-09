@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighlightsTableViewCell" id="KGk-i7-Jjw" customClass="HighlightsTableViewCell" customModule="TIFT" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="395" height="275"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HighlightsTableViewCell" rowHeight="339" id="KGk-i7-Jjw" customClass="HighlightsTableViewCell" customModule="TIFT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="339"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="395" height="275"/>
+                <rect key="frame" x="0.0" y="0.0" width="395" height="339"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YNr-CT-Fzd">
-                        <rect key="frame" x="0.0" y="0.0" width="395" height="275"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YNr-CT-Fzd">
+                        <rect key="frame" x="0.0" y="42.5" width="395" height="286.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zBO-Bg-7xp">
                             <size key="itemSize" width="395" height="275"/>
@@ -31,19 +31,29 @@
                             <outlet property="delegate" destination="KGk-i7-Jjw" id="Ek9-1C-NXQ"/>
                         </connections>
                     </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-rk-CWP">
+                        <rect key="frame" x="20" y="10" width="365" height="27.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="YNr-CT-Fzd" secondAttribute="bottom" id="1jI-2R-G3M"/>
-                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7aC-Yr-j0L"/>
-                    <constraint firstAttribute="trailing" secondItem="YNr-CT-Fzd" secondAttribute="trailing" id="Koo-OO-Epk"/>
-                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ofc-U8-ca1"/>
+                    <constraint firstItem="rcV-rk-CWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2cy-rt-Xqh"/>
+                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Z0-xZ-HMG"/>
+                    <constraint firstItem="rcV-rk-CWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Otc-Gb-Vjp"/>
+                    <constraint firstAttribute="trailing" secondItem="YNr-CT-Fzd" secondAttribute="trailing" id="TbN-td-pVo"/>
+                    <constraint firstAttribute="bottom" secondItem="YNr-CT-Fzd" secondAttribute="bottom" constant="10" id="l1G-xz-0Bk"/>
+                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="top" secondItem="rcV-rk-CWP" secondAttribute="bottom" constant="5" id="lXL-HO-p6J"/>
+                    <constraint firstAttribute="trailing" secondItem="rcV-rk-CWP" secondAttribute="trailing" constant="10" id="pTe-d0-WMM"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="YNr-CT-Fzd" id="gM4-iF-lHx"/>
+                <outlet property="titleLabel" destination="rcV-rk-CWP" id="Tfn-A0-qi7"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+            <point key="canvasLocation" x="136.95652173913044" y="72.65625"/>
         </tableViewCell>
     </objects>
     <resources>
