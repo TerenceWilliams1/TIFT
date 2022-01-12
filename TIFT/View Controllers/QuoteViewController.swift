@@ -13,9 +13,11 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var quotes: [Quote] = []
     var index = Int()
+    var themeColor = UIColor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupData()
         scrollToQuote(_atIndex: index)
     }
@@ -37,6 +39,14 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let quoteIndexPath = IndexPath(row: index, section: 0)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.table.scrollToRow(at: quoteIndexPath, at: UITableView.ScrollPosition.top, animated: true)
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if traitCollection.userInterfaceStyle == .light {
+            print("Light mode")
+        } else {
+            print("Dark mode")
         }
     }
     
@@ -83,7 +93,12 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let quote = quotes[indexPath.row]
         cell?.quoteLabel.text = quote.quote
-        cell?.authorLabel.text = "- \(quote.author)"
+        if !quote.author.isEmpty{
+            cell?.authorLabel.text = "- \(quote.author)"
+        }
+        cell?.authorLabel.isHidden = quote.author.isEmpty
+        cell?.tiftLogoLabel.text = "TIFT"
+        cell?.tiftLogoLabel.textColor = themeColor
         cell?.quoteIndexPath = indexPath
         return cell!
     }
@@ -101,5 +116,21 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func centerTableView() {
         let centerPath: IndexPath = table.indexPathForRow(at: CGPoint(x: table.bounds.midX, y: table.bounds.midY))!
         table.scrollToRow(at: centerPath, at: .middle, animated: true)
+    }
+    
+    func getTiftLogo() -> UIImage {
+        let diceRoll = Int(arc4random_uniform(5) + 1)
+        switch diceRoll {
+        case 0:
+            return UIImage(named: "tift-blue")!
+        case 1:
+            return UIImage(named: "tift-red")!
+        case 2:
+            return UIImage(named: "tift-sandbox")!
+        case 3:
+            return UIImage(named: "tift-evergreen")!
+        default:
+            return UIImage(named: "tift-dark")!
+        }
     }
 }

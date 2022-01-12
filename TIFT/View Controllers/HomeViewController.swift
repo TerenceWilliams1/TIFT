@@ -38,7 +38,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func setupData() {
-        sections = [.highlights, .categories]
+        sections = [.heaader, .highlights, .categories]
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.exploreQuotes(_fromNotification:)),
                                                name: NSNotification.Name(rawValue: "exploreQuotes"),
@@ -49,6 +49,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let categoriesTableViewCell = UINib(nibName: "CategoriesTableViewCell", bundle: nil)
         table.register(categoriesTableViewCell, forCellReuseIdentifier: "CategoriesTableViewCell")
+        
+        let headerTableViewCell = UINib(nibName: "HeaderTableViewCell", bundle: nil)
+        table.register(headerTableViewCell, forCellReuseIdentifier: "HeaderTableViewCell")
     }
 
     func fetchQuotes() {
@@ -89,27 +92,32 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController?.pushViewController(quoteViewController, animated: true)
     }
     
-    func exploreQuotes(quotes: [Quote], index: Int?) {
+    func exploreQuotes(quotes: [Quote], index: Int?, themeColor: UIColor?) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let quoteViewController = storyBoard.instantiateViewController(withIdentifier: "QuoteViewController") as! QuoteViewController
         quoteViewController.quotes = quotes
+        quoteViewController.themeColor = themeColor ?? UIColor.label
         quoteViewController.index = index ?? 0
         self.navigationController?.pushViewController(quoteViewController, animated: true)
     }
     
     @objc func exploreQuotes(_fromNotification notification: NSNotification) {
-        if let quotes = notification.userInfo?["quotes"] as? [Quote], let index = notification.userInfo?["index"] as? Int {
-            exploreQuotes(quotes: quotes, index: index)
+        if let quotes = notification.userInfo?["quotes"] as? [Quote],
+            let index = notification.userInfo?["index"] as? Int,
+            let themeColor = notification.userInfo?["color"] as? UIColor {
+            exploreQuotes(quotes: quotes, index: index, themeColor: themeColor)
         }
     }
     
     //MARK: - Table View
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch sections[indexPath.row] {
+        case .heaader:
+            return 65
         case .highlights:
             return 275
         case .categories:
-            return 465
+            return 800
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -119,6 +127,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch sections[indexPath.row] {
+        case .heaader:
+            let headerCell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath) as? HeaderTableViewCell
+            return headerCell!
+            
         case .highlights:
             let highlightCell = tableView.dequeueReusableCell(withIdentifier: "HighlightsTableViewCell", for: indexPath) as? HighlightsTableViewCell
             highlightCell?.titleLabel.text = "Highlights"
@@ -140,6 +152,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 }
 
 enum HomeSections: String {
+    case heaader = "header"
     case highlights = "Highlights"
     case categories = "Categories"
 }

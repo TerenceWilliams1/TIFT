@@ -14,6 +14,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 12
     }
 
 }

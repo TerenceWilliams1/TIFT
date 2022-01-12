@@ -43,17 +43,20 @@ class CategoriesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as? CategoryCollectionViewCell
-        
+
         if let category = categories?[indexPath.row] {
             cell?.titleLabl.text = category.title
-            cell?.iconView.image = UIImage(named: "")
+            cell?.iconView.image = icon(_forCategoryIndex: indexPath.row)
+            cell?.backgroundColor = color(_forCategory: indexPath.row)
         }
         return cell!
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let category = categories![indexPath.row]
-        let notificationDict: [String: Any] = ["quotes": category.quotes, "index": 0]
+        let notificationDict: [String: Any] = ["quotes": category.quotes,
+                                               "index": 0,
+                                               "color": color(_forCategory: indexPath.row)]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "exploreQuotes"),
                                         object: nil,
                                         userInfo: notificationDict)
@@ -68,6 +71,33 @@ class CategoriesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
             self.collectionView.scrollToNearestVisibleCollectionViewCell()
         }
     }
-
     
+    //MARK: - Helpers
+    func icon(_forCategoryIndex index: Int) -> UIImage {
+        switch index {
+        case 0:
+            return UIImage(named: "quotes")!
+        case 1:
+            return UIImage(named: "affirmations")!
+        case 2:
+            return UIImage(named: "brain")!
+        default:
+            return UIImage(named: "affirmations")!
+        }
+    }
+    
+    func color(_forCategory index: Int) -> UIColor {
+        switch index {
+        case 0:
+            return UIColor.rubyred!
+        case 1:
+            return UIColor.sandbox!
+        case 2:
+            return UIColor.coolblue!
+        case 3:
+            return UIColor.evergreen!
+        default:
+            return UIColor.sandbox!
+        }
+    }
 }

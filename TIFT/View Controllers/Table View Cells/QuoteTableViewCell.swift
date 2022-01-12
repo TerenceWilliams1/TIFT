@@ -18,6 +18,8 @@ class QuoteTableViewCell: UITableViewCell {
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var tiftLogoLabel: UILabel!
+    
     var quoteIndexPath = IndexPath()
 
     override func awakeFromNib() {

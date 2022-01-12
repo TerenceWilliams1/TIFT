@@ -9,11 +9,17 @@ import UIKit
 
 class HighlightedQuoteCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var backgroundImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.containerView.layoutIfNeeded()
+        self.containerView.layer.cornerRadius = 10
+        self.containerView.clipsToBounds = false
     }
     
     override func prepareForReuse() {

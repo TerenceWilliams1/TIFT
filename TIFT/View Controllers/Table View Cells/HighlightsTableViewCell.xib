@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YNr-CT-Fzd">
-                        <rect key="frame" x="0.0" y="42.5" width="395" height="286.5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="frame" x="0.0" y="55" width="395" height="279"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zBO-Bg-7xp">
-                            <size key="itemSize" width="395" height="275"/>
+                            <size key="itemSize" width="335" height="275"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -32,23 +31,28 @@
                         </connections>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-rk-CWP">
-                        <rect key="frame" x="20" y="10" width="365" height="27.5"/>
-                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                        <rect key="frame" x="20" y="10" width="365" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="5Si-9c-zhF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="rcV-rk-CWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2cy-rt-Xqh"/>
-                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Z0-xZ-HMG"/>
-                    <constraint firstItem="rcV-rk-CWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Otc-Gb-Vjp"/>
-                    <constraint firstAttribute="trailing" secondItem="YNr-CT-Fzd" secondAttribute="trailing" id="TbN-td-pVo"/>
-                    <constraint firstAttribute="bottom" secondItem="YNr-CT-Fzd" secondAttribute="bottom" constant="10" id="l1G-xz-0Bk"/>
-                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="top" secondItem="rcV-rk-CWP" secondAttribute="bottom" constant="5" id="lXL-HO-p6J"/>
-                    <constraint firstAttribute="trailing" secondItem="rcV-rk-CWP" secondAttribute="trailing" constant="10" id="pTe-d0-WMM"/>
+                    <constraint firstAttribute="trailing" secondItem="rcV-rk-CWP" secondAttribute="trailing" constant="10" id="V5h-tY-AQc"/>
+                    <constraint firstAttribute="bottom" secondItem="YNr-CT-Fzd" secondAttribute="bottom" constant="5" id="WgG-it-sru"/>
+                    <constraint firstAttribute="trailing" secondItem="YNr-CT-Fzd" secondAttribute="trailing" id="ieb-GV-znv"/>
+                    <constraint firstItem="rcV-rk-CWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jdH-1b-6Ky"/>
+                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="top" secondItem="rcV-rk-CWP" secondAttribute="bottom" constant="5" id="kbe-LE-YmL"/>
+                    <constraint firstItem="rcV-rk-CWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sfS-V7-YFH"/>
+                    <constraint firstItem="YNr-CT-Fzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="y3y-Wy-mpk"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="collectionView" destination="YNr-CT-Fzd" id="gM4-iF-lHx"/>
                 <outlet property="titleLabel" destination="rcV-rk-CWP" id="Tfn-A0-qi7"/>
@@ -56,9 +60,4 @@
             <point key="canvasLocation" x="136.95652173913044" y="72.65625"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
