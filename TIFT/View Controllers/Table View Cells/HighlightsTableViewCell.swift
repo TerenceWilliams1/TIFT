@@ -47,12 +47,15 @@ class HighlightsTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
         if let highlight = quotes?[indexPath.row] {
             cell?.quoteLabel.text = highlight.quote
             cell?.authorLabel.text = highlight.author
+            cell?.containerView.backgroundColor = UIColor.peach
         }
         return cell!
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let notificationDict: [String: Any] = ["quotes": quotes!, "index": indexPath.row]
+        let notificationDict: [String: Any] = ["quotes": quotes!,
+                                               "index": indexPath.row,
+                                               "color": UIColor.peach!]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "exploreQuotes"),
                                         object: nil,
                                         userInfo: notificationDict)

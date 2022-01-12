@@ -56,10 +56,12 @@ extension UICollectionView {
 }
 
 extension UIColor {
-    static var evergreen = UIColor(hex: "7B9655")
+    static var evergreen = UIColor(hex: "537F40")
     static var coolblue = UIColor(hex: "80A4B1")
     static var sandbox = UIColor(hex: "E3BDA3")
     static var rubyred = UIColor(hex: "B93C3C")
+    static var darkblue = UIColor(hex: "0E1D3E")
+    static var peach = UIColor(hex: "DDA767")
 }
 
 extension UIColor {

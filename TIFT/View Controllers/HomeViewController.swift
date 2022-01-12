@@ -103,9 +103,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @objc func exploreQuotes(_fromNotification notification: NSNotification) {
         if let quotes = notification.userInfo?["quotes"] as? [Quote],
-            let index = notification.userInfo?["index"] as? Int,
-            let themeColor = notification.userInfo?["color"] as? UIColor {
-            exploreQuotes(quotes: quotes, index: index, themeColor: themeColor)
+           let index = notification.userInfo?["index"] as? Int {
+            
+            if let themeColor = notification.userInfo?["color"] as? UIColor {
+                exploreQuotes(quotes: quotes, index: index, themeColor: themeColor)
+                return
+            }
+            exploreQuotes(quotes: quotes, index: index, themeColor: UIColor.label)
         }
     }
     
