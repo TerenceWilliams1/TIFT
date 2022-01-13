@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var quotes: [Quote] = []
     var collection: Collection!
     var sections: [HomeSections] = []
+    private let refresh = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -45,7 +45,7 @@ class HighlightsTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HighlightedQuoteCollectionViewCell", for: indexPath) as? HighlightedQuoteCollectionViewCell
         
         if let highlight = quotes?[indexPath.row] {
-            cell?.quoteLabel.text = highlight.quote
+            cell?.quoteLabel.text = "★\n\(highlight.quote)"
             cell?.authorLabel.text = highlight.author
             cell?.containerView.backgroundColor = UIColor.peach
         }
