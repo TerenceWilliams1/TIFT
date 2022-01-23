@@ -166,7 +166,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8JJ-ds-ab9">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="16O-No-FnF">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="theme" id="16O-No-FnF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="changeTheme" destination="yEO-vz-crc" id="mck-g0-n1f"/>
                             </connections>
@@ -191,7 +192,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gaZ-KD-vTd">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.16555015328004186" green="0.16555015328004186" blue="0.16555015328004186" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="20" maxX="10" maxY="0.0"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rqF-b5-ofu">
                                     <size key="itemSize" width="128" height="128"/>
@@ -241,7 +242,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -258,6 +259,7 @@
         <image name="saveIcon" width="70" height="70"/>
         <image name="shareIcon" width="35" height="25"/>
         <image name="t2" width="1703" height="958"/>
+        <image name="theme" width="26" height="34"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

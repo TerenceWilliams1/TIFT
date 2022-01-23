@@ -48,9 +48,13 @@ class QuoteTableViewCell: UITableViewCell {
     }
     
     @IBAction func shareQuote() {
+        socialStack.isHidden = true
         let notificationDict: [String: String] = ["quote": quoteLabel.text!, "author": authorLabel.text!]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "shareQuote"),
                                         object: nil,
                                         userInfo: notificationDict)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.socialStack.isHidden = false
+        }
     }
 }

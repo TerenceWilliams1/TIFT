@@ -59,7 +59,7 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
                                         object: nil,
                                         userInfo: notificationDict)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
             self.dismiss(animated: true, completion: nil)
         })
     }

@@ -58,7 +58,8 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //MARK: - Actions
     @IBAction func changeTheme() {
-        let themeViewController = self.storyboard?.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let themeViewController = storyBoard.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
         
         let overlayController = DTOverlayController(viewController: themeViewController)
         overlayController.overlayHeight = .dynamic(0.5)
@@ -69,14 +70,25 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func shareQuote(_fromNotification notification: NSNotification) {
         if let quote = notification.userInfo?["quote"] as? String,
             let author = notification.userInfo?["author"] as? String {
-            let shareAll = [quote, author] as [Any]
+            let image = capturedImage()
+            let shareAll = [quote, author, image] as [Any]
             let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
             self.present(activityViewController, animated: true, completion: nil)
         }
     }
     
     @objc func saveQuote(_fromNotification notification: NSNotification) {
-        captureScreen()
+        let image = capturedImage()
+        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
+
+        let message = "Quote Saved Successfully"
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.present(alert, animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                alert.dismiss(animated: true, completion: nil)
+            }
+        }
 //        if let indexPath = notification.userInfo?["indexPath"] as? IndexPath {
 //            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = .clear// UIColor.systemGroupedBackground
 //            let quoteData = self.table.cellForRow(at: indexPath)?.contentView.asImage().pngData()
@@ -107,7 +119,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
-    func captureScreen() {
+    func capturedImage() -> UIImage {
         var image: UIImage?
         let scale = UIScreen.main.scale
         
@@ -119,16 +131,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        UIImageWriteToSavedPhotosAlbum(image!, self, nil, nil)
-
-        let message = "Quote Saved Successfully"
-        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.present(alert, animated: true, completion: nil)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                alert.dismiss(animated: true, completion: nil)
-            }
-        }
+        return image!
     }
 
     //MARK: - Table View

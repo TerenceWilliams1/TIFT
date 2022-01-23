@@ -13,6 +13,9 @@ class ThemeCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        themeImageView.layer.borderColor = UIColor.white.cgColor
+        themeImageView.layer.borderWidth = 0.5
     }
     
     override func prepareForReuse() {

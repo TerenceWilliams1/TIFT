@@ -30,8 +30,8 @@
             filePath = "TIFT/View Controllers/QuoteViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "changeTheme(_fromNotification:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,9 +46,9 @@
             filePath = "TIFT/View Controllers/QuoteViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "captureScreen()"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "capturedImage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
