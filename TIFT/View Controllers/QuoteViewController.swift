@@ -76,22 +76,23 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @objc func saveQuote(_fromNotification notification: NSNotification) {
-        if let indexPath = notification.userInfo?["indexPath"] as? IndexPath {
-            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = UIColor.systemGroupedBackground
-            let quoteData = self.table.cellForRow(at: indexPath)?.contentView.asImage().pngData()
-            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = .clear
-            
-            UIImageWriteToSavedPhotosAlbum((UIImage(data: quoteData!) ?? UIImage(named: ""))!, self, nil, nil)
-            
-            let message = "Quote Saved Successfully"
-            let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.present(alert, animated: true, completion: nil)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    alert.dismiss(animated: true, completion: nil)
-                }
-            }
-        }
+        captureScreen()
+//        if let indexPath = notification.userInfo?["indexPath"] as? IndexPath {
+//            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = .clear// UIColor.systemGroupedBackground
+//            let quoteData = self.table.cellForRow(at: indexPath)?.contentView.asImage().pngData()
+//            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = .clear
+//
+//            UIImageWriteToSavedPhotosAlbum((UIImage(data: quoteData!) ?? UIImage(named: ""))!, self, nil, nil)
+//
+//            let message = "Quote Saved Successfully"
+//            let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                self.present(alert, animated: true, completion: nil)
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+//                    alert.dismiss(animated: true, completion: nil)
+//                }
+//            }
+//        }
     }
     
     @objc func changeTheme(_fromNotification notification: NSNotification) {
@@ -102,6 +103,30 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.backgroundImageView.backgroundColor = .black
             default:
                 self.backgroundImageView.image = UIImage(named: theme)
+            }
+        }
+    }
+    
+    func captureScreen() {
+        var image: UIImage?
+        let scale = UIScreen.main.scale
+        
+        let layer = self.view.layer
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale)
+        
+        let context = UIGraphicsGetCurrentContext()!
+        layer.render(in: context)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        UIImageWriteToSavedPhotosAlbum(image!, self, nil, nil)
+
+        let message = "Quote Saved Successfully"
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.present(alert, animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                alert.dismiss(animated: true, completion: nil)
             }
         }
     }
