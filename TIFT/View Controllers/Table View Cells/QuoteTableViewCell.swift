@@ -9,7 +9,6 @@ import UIKit
 
 class QuoteTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!

@@ -54,7 +54,7 @@ class CategoriesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let category = categories![indexPath.row]
-        let notificationDict: [String: Any] = ["quotes": category.quotes,
+        let notificationDict: [String: Any] = ["quotes": category.quotes.shuffled(),
                                                "index": 0,
                                                "color": color(_forCategory: indexPath.row)]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "exploreQuotes"),

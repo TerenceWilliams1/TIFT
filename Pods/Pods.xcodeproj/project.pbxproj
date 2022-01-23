@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F7447509BED85765AF17FC03B772D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0A85F4346B0D62E8AADA86392CF148C1 /* DTOverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D430A835867B73F7E30CC616AF7FED0 /* DTOverlayPresentationController.swift */; };
+		125F9E5B91A0D3D3DCFF3272D13B201A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		30FD257C39D269D6514C1B388FE97145 /* DTScrollViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9140078C50003495EF6C2C62B884 /* DTScrollViewRepresentable.swift */; };
+		729E08173C218B66356C9799F8712A5C /* Pods-TIFT-TIFTUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F44C1F22CB0E16749D5A742EA9AB07B5 /* Pods-TIFT-TIFTUITests-dummy.m */; };
+		73106A8A6C394C98D9D3BA97F0AF4668 /* Pods-TIFTTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 738E98BCDD5C4DCCB232EC05204A7472 /* Pods-TIFTTests-dummy.m */; };
+		7D9AE5D589C7A53A852E4EA2233972B8 /* TransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9592F549E46F4BCC454335C894733 /* TransitioningAnimator.swift */; };
+		82A4A3F65D6263B85173493BBE949D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83DCC569311E36ABA6D65D0D05523649 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D97A22F8BFD9CB6E81B41F2684F315B /* InteractiveTransition.swift */; };
+		A78F69C3E35DF9C925D968E4F29BAB90 /* Pods-TIFT-TIFTUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC463ADAF984D5799C4C4BFE6016E521 /* Pods-TIFT-TIFTUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B33F53F45B163DC65EAC752166D07D46 /* Pods-TIFTTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FCB884199204E4A1F1F8803E2422A08 /* Pods-TIFTTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4ACBA911E7225100820A3D5842101F /* DTOverlayController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AACBCD5E8C1F4FA3D1CBBF4C3B2FE58 /* DTOverlayController-dummy.m */; };
+		BF55DE033583735A7EB8A0EE23B66A5F /* Pods-TIFT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BA440C1BC1C38ED4FD11A4BF2233 /* Pods-TIFT-dummy.m */; };
+		C5CEE1A04A1FC6BAB2F0BB050BD7F401 /* DTOverlayController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B6AE64546D6653867557013F4DC27B /* DTOverlayController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB75DDEBED0457E8B9572D64CB0F961E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E0B9C7F431D94753FA93BF4983BD2B6A /* DTOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF772A4AA7266AABD7EBE286D88375E /* DTOverlayController.swift */; };
+		FEA736CEA48B58783C15AAAC1B7149BC /* Pods-TIFT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124AED9F279252E969D8DDE3880037B6 /* Pods-TIFT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D0C8227D2849B2966493B73609E9243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B44A868BF564EE79986C06C01A3C1FF;
+			remoteInfo = "Pods-TIFT";
+		};
+		6199C9AB9E978AD11284142311D74B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A54C567BAF7759AC205CB50EDD7DA1E;
+			remoteInfo = DTOverlayController;
+		};
+		8122DDC0FE56B13122AEB5BE633E8817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A54C567BAF7759AC205CB50EDD7DA1E;
+			remoteInfo = DTOverlayController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B8F2712452C27C0B6BB8C89D1F3154 /* Pods-TIFT-TIFTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT-TIFTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		07A7DE3F2AD68BAB80EB83D9E4FD9090 /* Pods-TIFTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1194D42BBBC49311EACCA014DB10F791 /* Pods-TIFT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TIFT-frameworks.sh"; sourceTree = "<group>"; };
+		124AED9F279252E969D8DDE3880037B6 /* Pods-TIFT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TIFT-umbrella.h"; sourceTree = "<group>"; };
+		171ACCAEA15844C5925A891240047B8C /* Pods-TIFT-TIFTUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-TIFTUITests-Info.plist"; sourceTree = "<group>"; };
+		1D430A835867B73F7E30CC616AF7FED0 /* DTOverlayPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTOverlayPresentationController.swift; path = DTOverlayController/Classes/DTOverlayPresentationController.swift; sourceTree = "<group>"; };
+		213E66BFAE28375D5DBBC0C974CD31A5 /* DTOverlayController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTOverlayController.debug.xcconfig; sourceTree = "<group>"; };
+		278C3DD5556FC874A180DD4368B0AB9A /* Pods-TIFTTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TIFTTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EE9592F549E46F4BCC454335C894733 /* TransitioningAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitioningAnimator.swift; path = DTOverlayController/Classes/TransitioningAnimator.swift; sourceTree = "<group>"; };
+		3449648521ED326922E20B4D79A6638E /* Pods-TIFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT.debug.xcconfig"; sourceTree = "<group>"; };
+		3AACBCD5E8C1F4FA3D1CBBF4C3B2FE58 /* DTOverlayController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTOverlayController-dummy.m"; sourceTree = "<group>"; };
+		412308A181DCB975F2345E00B03B4143 /* Pods-TIFTTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TIFTTests.modulemap"; sourceTree = "<group>"; };
+		435B8F875BE52896A6A184E68FBE92AB /* Pods-TIFTTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TIFTTests"; path = Pods_TIFTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D97A22F8BFD9CB6E81B41F2684F315B /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = DTOverlayController/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
+		4FCB884199204E4A1F1F8803E2422A08 /* Pods-TIFTTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TIFTTests-umbrella.h"; sourceTree = "<group>"; };
+		5B53B4D948E3D07CFF8C3810DE5888FD /* Pods-TIFT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TIFT.modulemap"; sourceTree = "<group>"; };
+		5B67537B81925318AD6FAE39484F4DC9 /* DTOverlayController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTOverlayController-prefix.pch"; sourceTree = "<group>"; };
+		62B2F97ADADF634F53A16B2CB78AB535 /* Pods-TIFT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TIFT-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		738E98BCDD5C4DCCB232EC05204A7472 /* Pods-TIFTTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TIFTTests-dummy.m"; sourceTree = "<group>"; };
+		7AF772A4AA7266AABD7EBE286D88375E /* DTOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTOverlayController.swift; path = DTOverlayController/Classes/DTOverlayController.swift; sourceTree = "<group>"; };
+		80C8E3A209FED953B9F6E65185EAA01A /* Pods-TIFTTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFTTests-Info.plist"; sourceTree = "<group>"; };
+		84BB4BB4514E106600E010903D7E85AA /* Pods-TIFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT.release.xcconfig"; sourceTree = "<group>"; };
+		8CEC7200F08130E49DA622087EB1DA43 /* DTOverlayController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTOverlayController.release.xcconfig; sourceTree = "<group>"; };
+		8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TIFT-TIFTUITests"; path = Pods_TIFT_TIFTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABE47678B26598BB3488F52FA761F10D /* Pods-TIFT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC463ADAF984D5799C4C4BFE6016E521 /* Pods-TIFT-TIFTUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TIFT-TIFTUITests-umbrella.h"; sourceTree = "<group>"; };
+		B0B4BA440C1BC1C38ED4FD11A4BF2233 /* Pods-TIFT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TIFT-dummy.m"; sourceTree = "<group>"; };
+		B57D05A264885E69C91B245817DB8CD7 /* Pods-TIFT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TIFT"; path = Pods_TIFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6366380821DDFFD46908E0D21F08307 /* Pods-TIFT-TIFTUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-TIFTUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF17E95BF405CF1FA48E218FA2E838B4 /* Pods-TIFT-TIFTUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TIFT-TIFTUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C35B7343A786F1F8889EB74EE47EA5AF /* DTOverlayController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DTOverlayController.modulemap; sourceTree = "<group>"; };
+		C5F6E44642F904EFC7DF2BA4F3A1119B /* Pods-TIFT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-Info.plist"; sourceTree = "<group>"; };
+		CD270542D06B9426D08912964CE6E085 /* Pods-TIFTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFTTests.release.xcconfig"; sourceTree = "<group>"; };
+		D117372DE890264EE5C022FB0854C3ED /* Pods-TIFT-TIFTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT-TIFTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1B6AE64546D6653867557013F4DC27B /* DTOverlayController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTOverlayController-umbrella.h"; sourceTree = "<group>"; };
+		D41FBA5D6E5374FDD3F25FA09CA4330A /* DTOverlayController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DTOverlayController; path = DTOverlayController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8A9140078C50003495EF6C2C62B884 /* DTScrollViewRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTScrollViewRepresentable.swift; path = DTOverlayController/Classes/DTScrollViewRepresentable.swift; sourceTree = "<group>"; };
+		DBC2A7E594A431DE6465DD1EF908E8BD /* Pods-TIFT-TIFTUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TIFT-TIFTUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E78FC7E10EB6642539C7631AD4B4E2A2 /* Pods-TIFT-TIFTUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TIFT-TIFTUITests.modulemap"; sourceTree = "<group>"; };
+		EC1F6A29607661DFA7DE8CB0C0F1328F /* Pods-TIFTTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFTTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F403882700E649E0C679B913B1EBC0FF /* DTOverlayController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DTOverlayController-Info.plist"; sourceTree = "<group>"; };
+		F44C1F22CB0E16749D5A742EA9AB07B5 /* Pods-TIFT-TIFTUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TIFT-TIFTUITests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C159C154C9CF4789007AE9C7256019F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125F9E5B91A0D3D3DCFF3272D13B201A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		329E0381648185B395A3979C2FEE1021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB75DDEBED0457E8B9572D64CB0F961E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5640FFBF9F3B2404B3E8324332018CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F7447509BED85765AF17FC03B772D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD5539FA93A68574FDA1C7AA26E748A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A4A3F65D6263B85173493BBE949D92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41ECC415AB52014239CFA16B1B92F171 /* Pods-TIFT */ = {
+			isa = PBXGroup;
+			children = (
+				5B53B4D948E3D07CFF8C3810DE5888FD /* Pods-TIFT.modulemap */,
+				62B2F97ADADF634F53A16B2CB78AB535 /* Pods-TIFT-acknowledgements.markdown */,
+				ABE47678B26598BB3488F52FA761F10D /* Pods-TIFT-acknowledgements.plist */,
+				B0B4BA440C1BC1C38ED4FD11A4BF2233 /* Pods-TIFT-dummy.m */,
+				1194D42BBBC49311EACCA014DB10F791 /* Pods-TIFT-frameworks.sh */,
+				C5F6E44642F904EFC7DF2BA4F3A1119B /* Pods-TIFT-Info.plist */,
+				124AED9F279252E969D8DDE3880037B6 /* Pods-TIFT-umbrella.h */,
+				3449648521ED326922E20B4D79A6638E /* Pods-TIFT.debug.xcconfig */,
+				84BB4BB4514E106600E010903D7E85AA /* Pods-TIFT.release.xcconfig */,
+			);
+			name = "Pods-TIFT";
+			path = "Target Support Files/Pods-TIFT";
+			sourceTree = "<group>";
+		};
+		47801BF3FDA9BE76B643561DF841B46D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35B7343A786F1F8889EB74EE47EA5AF /* DTOverlayController.modulemap */,
+				3AACBCD5E8C1F4FA3D1CBBF4C3B2FE58 /* DTOverlayController-dummy.m */,
+				F403882700E649E0C679B913B1EBC0FF /* DTOverlayController-Info.plist */,
+				5B67537B81925318AD6FAE39484F4DC9 /* DTOverlayController-prefix.pch */,
+				D1B6AE64546D6653867557013F4DC27B /* DTOverlayController-umbrella.h */,
+				213E66BFAE28375D5DBBC0C974CD31A5 /* DTOverlayController.debug.xcconfig */,
+				8CEC7200F08130E49DA622087EB1DA43 /* DTOverlayController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DTOverlayController";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6360D77BAEFC333274EA4D12A8ED50FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D41FBA5D6E5374FDD3F25FA09CA4330A /* DTOverlayController */,
+				B57D05A264885E69C91B245817DB8CD7 /* Pods-TIFT */,
+				8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */,
+				435B8F875BE52896A6A184E68FBE92AB /* Pods-TIFTTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		774DE2AF4636B6049306DD495F39EB56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F90E7D388F1484020499F86BA06F3 /* DTOverlayController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A15789FDDA107FDA9FD93D68B3C72A40 /* Pods-TIFT-TIFTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E78FC7E10EB6642539C7631AD4B4E2A2 /* Pods-TIFT-TIFTUITests.modulemap */,
+				BF17E95BF405CF1FA48E218FA2E838B4 /* Pods-TIFT-TIFTUITests-acknowledgements.markdown */,
+				B6366380821DDFFD46908E0D21F08307 /* Pods-TIFT-TIFTUITests-acknowledgements.plist */,
+				F44C1F22CB0E16749D5A742EA9AB07B5 /* Pods-TIFT-TIFTUITests-dummy.m */,
+				DBC2A7E594A431DE6465DD1EF908E8BD /* Pods-TIFT-TIFTUITests-frameworks.sh */,
+				171ACCAEA15844C5925A891240047B8C /* Pods-TIFT-TIFTUITests-Info.plist */,
+				AC463ADAF984D5799C4C4BFE6016E521 /* Pods-TIFT-TIFTUITests-umbrella.h */,
+				D117372DE890264EE5C022FB0854C3ED /* Pods-TIFT-TIFTUITests.debug.xcconfig */,
+				03B8F2712452C27C0B6BB8C89D1F3154 /* Pods-TIFT-TIFTUITests.release.xcconfig */,
+			);
+			name = "Pods-TIFT-TIFTUITests";
+			path = "Target Support Files/Pods-TIFT-TIFTUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				774DE2AF4636B6049306DD495F39EB56 /* Pods */,
+				6360D77BAEFC333274EA4D12A8ED50FC /* Products */,
+				FC8165D5B4B2FC19DC57D3C3FE8E4E15 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF5F90E7D388F1484020499F86BA06F3 /* DTOverlayController */ = {
+			isa = PBXGroup;
+			children = (
+				7AF772A4AA7266AABD7EBE286D88375E /* DTOverlayController.swift */,
+				1D430A835867B73F7E30CC616AF7FED0 /* DTOverlayPresentationController.swift */,
+				DB8A9140078C50003495EF6C2C62B884 /* DTScrollViewRepresentable.swift */,
+				4D97A22F8BFD9CB6E81B41F2684F315B /* InteractiveTransition.swift */,
+				2EE9592F549E46F4BCC454335C894733 /* TransitioningAnimator.swift */,
+				47801BF3FDA9BE76B643561DF841B46D /* Support Files */,
+			);
+			name = DTOverlayController;
+			path = DTOverlayController;
+			sourceTree = "<group>";
+		};
+		F0AF19FEDCE9854BAA0A2267EFF0E029 /* Pods-TIFTTests */ = {
+			isa = PBXGroup;
+			children = (
+				412308A181DCB975F2345E00B03B4143 /* Pods-TIFTTests.modulemap */,
+				278C3DD5556FC874A180DD4368B0AB9A /* Pods-TIFTTests-acknowledgements.markdown */,
+				EC1F6A29607661DFA7DE8CB0C0F1328F /* Pods-TIFTTests-acknowledgements.plist */,
+				738E98BCDD5C4DCCB232EC05204A7472 /* Pods-TIFTTests-dummy.m */,
+				80C8E3A209FED953B9F6E65185EAA01A /* Pods-TIFTTests-Info.plist */,
+				4FCB884199204E4A1F1F8803E2422A08 /* Pods-TIFTTests-umbrella.h */,
+				07A7DE3F2AD68BAB80EB83D9E4FD9090 /* Pods-TIFTTests.debug.xcconfig */,
+				CD270542D06B9426D08912964CE6E085 /* Pods-TIFTTests.release.xcconfig */,
+			);
+			name = "Pods-TIFTTests";
+			path = "Target Support Files/Pods-TIFTTests";
+			sourceTree = "<group>";
+		};
+		FC8165D5B4B2FC19DC57D3C3FE8E4E15 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41ECC415AB52014239CFA16B1B92F171 /* Pods-TIFT */,
+				A15789FDDA107FDA9FD93D68B3C72A40 /* Pods-TIFT-TIFTUITests */,
+				F0AF19FEDCE9854BAA0A2267EFF0E029 /* Pods-TIFTTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		819AA5F7504AB52197D11BA55EAFF5E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33F53F45B163DC65EAC752166D07D46 /* Pods-TIFTTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B0F5AB1CDAEDBBF0BFFD9D20400C1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5CEE1A04A1FC6BAB2F0BB050BD7F401 /* DTOverlayController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D096568894130FFA864098B3638AD543 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78F69C3E35DF9C925D968E4F29BAB90 /* Pods-TIFT-TIFTUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0F45361538076D837A99AF8921F68D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA736CEA48B58783C15AAAC1B7149BC /* Pods-TIFT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DAC7A1918DAC7F8BB4A4C9B559CC0D2 /* Build configuration list for PBXNativeTarget "DTOverlayController" */;
+			buildPhases = (
+				84B0F5AB1CDAEDBBF0BFFD9D20400C1B /* Headers */,
+				E8B0DE080B1ECCBF16E22EDA2A622535 /* Sources */,
+				0C159C154C9CF4789007AE9C7256019F /* Frameworks */,
+				EB8211C3C9A95BEABAC74BD9235C75A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTOverlayController;
+			productName = DTOverlayController;
+			productReference = D41FBA5D6E5374FDD3F25FA09CA4330A /* DTOverlayController */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B44A868BF564EE79986C06C01A3C1FF /* Pods-TIFT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B52F1C63A51399B0A76CD7AD54425D /* Build configuration list for PBXNativeTarget "Pods-TIFT" */;
+			buildPhases = (
+				DB0F45361538076D837A99AF8921F68D /* Headers */,
+				0894CE453EA89F53B39FBDFFCFF4C706 /* Sources */,
+				5640FFBF9F3B2404B3E8324332018CB8 /* Frameworks */,
+				3D66AFBA0FCD92027240EB848B6D498F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD83D3B0A6AA0A3172803CCC04A7D5D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-TIFT";
+			productName = Pods_TIFT;
+			productReference = B57D05A264885E69C91B245817DB8CD7 /* Pods-TIFT */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3741CE93A869213EB406FE3899117FF /* Pods-TIFT-TIFTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B757EB501FE16641A6719B36D8F3A773 /* Build configuration list for PBXNativeTarget "Pods-TIFT-TIFTUITests" */;
+			buildPhases = (
+				D096568894130FFA864098B3638AD543 /* Headers */,
+				CE43777004C1E905C5926AC573CBF883 /* Sources */,
+				329E0381648185B395A3979C2FEE1021 /* Frameworks */,
+				07515A272BA13B1A480688000B9110D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B058A3F450D0524FF4C1CBA46F6DCFED /* PBXTargetDependency */,
+			);
+			name = "Pods-TIFT-TIFTUITests";
+			productName = Pods_TIFT_TIFTUITests;
+			productReference = 8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5B2800557F9DCCBE4E6E62C36F39C11 /* Pods-TIFTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6C5DCFC829FB03535F9B2998FA6396 /* Build configuration list for PBXNativeTarget "Pods-TIFTTests" */;
+			buildPhases = (
+				819AA5F7504AB52197D11BA55EAFF5E1 /* Headers */,
+				C2C7098756DB25A4E497F13CDAEDC415 /* Sources */,
+				ABD5539FA93A68574FDA1C7AA26E748A /* Frameworks */,
+				BCB857808574F94DD336501AB768E67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA56B35E5D4165321F0545883F293BA /* PBXTargetDependency */,
+			);
+			name = "Pods-TIFTTests";
+			productName = Pods_TIFTTests;
+			productReference = 435B8F875BE52896A6A184E68FBE92AB /* Pods-TIFTTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6360D77BAEFC333274EA4D12A8ED50FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */,
+				4B44A868BF564EE79986C06C01A3C1FF /* Pods-TIFT */,
+				E3741CE93A869213EB406FE3899117FF /* Pods-TIFT-TIFTUITests */,
+				F5B2800557F9DCCBE4E6E62C36F39C11 /* Pods-TIFTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07515A272BA13B1A480688000B9110D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D66AFBA0FCD92027240EB848B6D498F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB857808574F94DD336501AB768E67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8211C3C9A95BEABAC74BD9235C75A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0894CE453EA89F53B39FBDFFCFF4C706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF55DE033583735A7EB8A0EE23B66A5F /* Pods-TIFT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C7098756DB25A4E497F13CDAEDC415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73106A8A6C394C98D9D3BA97F0AF4668 /* Pods-TIFTTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43777004C1E905C5926AC573CBF883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729E08173C218B66356C9799F8712A5C /* Pods-TIFT-TIFTUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B0DE080B1ECCBF16E22EDA2A622535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B9C7F431D94753FA93BF4983BD2B6A /* DTOverlayController.swift in Sources */,
+				BF4ACBA911E7225100820A3D5842101F /* DTOverlayController-dummy.m in Sources */,
+				0A85F4346B0D62E8AADA86392CF148C1 /* DTOverlayPresentationController.swift in Sources */,
+				30FD257C39D269D6514C1B388FE97145 /* DTScrollViewRepresentable.swift in Sources */,
+				83DCC569311E36ABA6D65D0D05523649 /* InteractiveTransition.swift in Sources */,
+				7D9AE5D589C7A53A852E4EA2233972B8 /* TransitioningAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AA56B35E5D4165321F0545883F293BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TIFT";
+			target = 4B44A868BF564EE79986C06C01A3C1FF /* Pods-TIFT */;
+			targetProxy = 5D0C8227D2849B2966493B73609E9243 /* PBXContainerItemProxy */;
+		};
+		B058A3F450D0524FF4C1CBA46F6DCFED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DTOverlayController;
+			target = 0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */;
+			targetProxy = 6199C9AB9E978AD11284142311D74B20 /* PBXContainerItemProxy */;
+		};
+		CD83D3B0A6AA0A3172803CCC04A7D5D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DTOverlayController;
+			target = 0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */;
+			targetProxy = 8122DDC0FE56B13122AEB5BE633E8817 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DDFE20D99A745B8C7F623227A1FC66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D117372DE890264EE5C022FB0854C3ED /* Pods-TIFT-TIFTUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26EC50ADD88602363C489973F6AB93EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213E66BFAE28375D5DBBC0C974CD31A5 /* DTOverlayController.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DTOverlayController/DTOverlayController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DTOverlayController/DTOverlayController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DTOverlayController/DTOverlayController.modulemap";
+				PRODUCT_MODULE_NAME = DTOverlayController;
+				PRODUCT_NAME = DTOverlayController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A94B08A6906603626EC52571EE1FA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD270542D06B9426D08912964CE6E085 /* Pods-TIFTTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A51A5146A341808E9BCC4C2275902BF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B8F2712452C27C0B6BB8C89D1F3154 /* Pods-TIFT-TIFTUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AED3296B3A39048877D985B2398ABC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BB4BB4514E106600E010903D7E85AA /* Pods-TIFT.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFFC7E057A69C2242A799C2766C4AEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A7DE3F2AD68BAB80EB83D9E4FD9090 /* Pods-TIFTTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFE5B8977DD65A3CB17F0B0F95975EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3449648521ED326922E20B4D79A6638E /* Pods-TIFT.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F27248C66A86893BB7A9E1D174BEBBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEC7200F08130E49DA622087EB1DA43 /* DTOverlayController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DTOverlayController/DTOverlayController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DTOverlayController/DTOverlayController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DTOverlayController/DTOverlayController.modulemap";
+				PRODUCT_MODULE_NAME = DTOverlayController;
+				PRODUCT_NAME = DTOverlayController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DAC7A1918DAC7F8BB4A4C9B559CC0D2 /* Build configuration list for PBXNativeTarget "DTOverlayController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EC50ADD88602363C489973F6AB93EB /* Debug */,
+				F27248C66A86893BB7A9E1D174BEBBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B52F1C63A51399B0A76CD7AD54425D /* Build configuration list for PBXNativeTarget "Pods-TIFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE5B8977DD65A3CB17F0B0F95975EBE /* Debug */,
+				AED3296B3A39048877D985B2398ABC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B757EB501FE16641A6719B36D8F3A773 /* Build configuration list for PBXNativeTarget "Pods-TIFT-TIFTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DDFE20D99A745B8C7F623227A1FC66C /* Debug */,
+				A51A5146A341808E9BCC4C2275902BF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF6C5DCFC829FB03535F9B2998FA6396 /* Build configuration list for PBXNativeTarget "Pods-TIFTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFC7E057A69C2242A799C2766C4AEB0 /* Debug */,
+				8A94B08A6906603626EC52571EE1FA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

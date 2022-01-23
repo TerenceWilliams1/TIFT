@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import DTOverlayController
 
 class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
 
     var quotes: [Quote] = []
     var index = Int()
@@ -32,6 +34,10 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         NotificationCenter.default.addObserver(self, selector: #selector(self.saveQuote(_fromNotification:)),
                                                name: NSNotification.Name(rawValue: "saveQuote"),
                                                object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.changeTheme(_fromNotification:)),
+                                               name: NSNotification.Name(rawValue: "changeTheme"),
+                                               object: nil)
     }
     
     //MARK: - Helpers
@@ -51,6 +57,15 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     //MARK: - Actions
+    @IBAction func changeTheme() {
+        let themeViewController = self.storyboard?.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
+        
+        let overlayController = DTOverlayController(viewController: themeViewController)
+        overlayController.overlayHeight = .dynamic(0.5)
+        overlayController.isPanGestureEnabled = false
+        present(overlayController, animated: true, completion: nil)
+    }
+    
     @objc func shareQuote(_fromNotification notification: NSNotification) {
         if let quote = notification.userInfo?["quote"] as? String,
             let author = notification.userInfo?["author"] as? String {
@@ -75,6 +90,18 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     alert.dismiss(animated: true, completion: nil)
                 }
+            }
+        }
+    }
+    
+    @objc func changeTheme(_fromNotification notification: NSNotification) {
+        if let theme = notification.userInfo?["theme"] as? String {
+            switch theme {
+            case Theme.dark.rawValue:
+                self.backgroundImageView.image = nil
+                self.backgroundImageView.backgroundColor = .black
+            default:
+                self.backgroundImageView.image = UIImage(named: theme)
             }
         }
     }

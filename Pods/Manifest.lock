@@ -1,0 +1,16 @@
+PODS:
+  - DTOverlayController (1.0.2)
+
+DEPENDENCIES:
+  - DTOverlayController
+
+SPEC REPOS:
+  trunk:
+    - DTOverlayController
+
+SPEC CHECKSUMS:
+  DTOverlayController: 7bd26660a6152efabea36f9342182c038d80852e
+
+PODFILE CHECKSUM: c2497b64ff62a84cae7c0b654e44ba2af0b6167d
+
+COCOAPODS: 1.11.2

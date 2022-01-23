@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1488C7279CF0B600D1022B /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1488C6279CF0B600D1022B /* ThemeViewController.swift */; };
+		3C1488CA279CFD9000D1022B /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */; };
+		3C1488CB279CFD9000D1022B /* ThemeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */; };
+		678EB9FCA216EFF8403373CF /* Pods_TIFT_TIFTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC319EC5D34D4CC068C5DC76 /* Pods_TIFT_TIFTUITests.framework */; };
 		6D30D27227853E0F00A2FD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27127853E0F00A2FD84 /* AppDelegate.swift */; };
 		6D30D27427853E0F00A2FD84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */; };
 		6D30D27627853E0F00A2FD84 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27527853E0F00A2FD84 /* QuoteViewController.swift */; };
@@ -36,6 +40,8 @@
 		6D833BA7278A9B3A00D31F4C /* HighlightsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D833BA5278A9B3A00D31F4C /* HighlightsTableViewCell.xib */; };
 		6D833BAA278AAAD300D31F4C /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D833BA8278AAAD300D31F4C /* CategoriesTableViewCell.swift */; };
 		6D833BAB278AAAD300D31F4C /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D833BA9278AAAD300D31F4C /* CategoriesTableViewCell.xib */; };
+		9CE0003F3F4F234C0661104A /* Pods_TIFTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994B3C3B67CE537626C838AE /* Pods_TIFTTests.framework */; };
+		D1599595A0C950FF1B25C5A5 /* Pods_TIFT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AA352ACFF752A4D295EC7C /* Pods_TIFT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ED206682B3A2E8FDA47A9F3 /* Pods-TIFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFT.release.xcconfig"; path = "Target Support Files/Pods-TIFT/Pods-TIFT.release.xcconfig"; sourceTree = "<group>"; };
+		16AA352ACFF752A4D295EC7C /* Pods_TIFT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2700ABFFC34F6AC559BF9D17 /* Pods-TIFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFT.debug.xcconfig"; path = "Target Support Files/Pods-TIFT/Pods-TIFT.debug.xcconfig"; sourceTree = "<group>"; };
+		3C1488C6279CF0B600D1022B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeCollectionViewCell.xib; sourceTree = "<group>"; };
+		463A3E35A094428B77F6003C /* Pods-TIFTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFTTests.debug.xcconfig"; path = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D30D26E27853E0F00A2FD84 /* TIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D30D27127853E0F00A2FD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +102,11 @@
 		6D833BA5278A9B3A00D31F4C /* HighlightsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighlightsTableViewCell.xib; sourceTree = "<group>"; };
 		6D833BA8278AAAD300D31F4C /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		6D833BA9278AAAD300D31F4C /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
+		994B3C3B67CE537626C838AE /* Pods_TIFTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIFTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D10D3AFF04E8ED58FDF812 /* Pods-TIFT-TIFTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFT-TIFTUITests.release.xcconfig"; path = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC319EC5D34D4CC068C5DC76 /* Pods_TIFT_TIFTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIFT_TIFTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC500A30A0DF6C2CB977C98B /* Pods-TIFT-TIFTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFT-TIFTUITests.debug.xcconfig"; path = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3FBAE706C6435054F2DB4F3 /* Pods-TIFTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFTTests.release.xcconfig"; path = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1599595A0C950FF1B25C5A5 /* Pods_TIFT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE0003F3F4F234C0661104A /* Pods_TIFTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +130,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678EB9FCA216EFF8403373CF /* Pods_TIFT_TIFTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29F0F5031B27DF4FA78A3778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2700ABFFC34F6AC559BF9D17 /* Pods-TIFT.debug.xcconfig */,
+				0ED206682B3A2E8FDA47A9F3 /* Pods-TIFT.release.xcconfig */,
+				DC500A30A0DF6C2CB977C98B /* Pods-TIFT-TIFTUITests.debug.xcconfig */,
+				C0D10D3AFF04E8ED58FDF812 /* Pods-TIFT-TIFTUITests.release.xcconfig */,
+				463A3E35A094428B77F6003C /* Pods-TIFTTests.debug.xcconfig */,
+				E3FBAE706C6435054F2DB4F3 /* Pods-TIFTTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6D30D26527853E0F00A2FD84 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +157,8 @@
 				6D30D28A27853E1200A2FD84 /* TIFTTests */,
 				6D30D29427853E1200A2FD84 /* TIFTUITests */,
 				6D30D26F27853E0F00A2FD84 /* Products */,
+				29F0F5031B27DF4FA78A3778 /* Pods */,
+				9300F9B0C6B2914C7842D7E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +211,7 @@
 			children = (
 				6D833B872786978300D31F4C /* HomeViewController.swift */,
 				6D30D27527853E0F00A2FD84 /* QuoteViewController.swift */,
+				3C1488C6279CF0B600D1022B /* ThemeViewController.swift */,
 				6D833B8F2787FDE400D31F4C /* Collection View Cells */,
 				6D833B892786A71E00D31F4C /* Table View Cells */,
 			);
@@ -223,8 +260,20 @@
 				6D833B9D2788AEB200D31F4C /* CollectionHeaderView.xib */,
 				6D833BA0278A9AA000D31F4C /* CategoryCollectionViewCell.swift */,
 				6D833BA1278A9AA000D31F4C /* CategoryCollectionViewCell.xib */,
+				3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */,
+				3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */,
 			);
 			path = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		9300F9B0C6B2914C7842D7E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16AA352ACFF752A4D295EC7C /* Pods_TIFT.framework */,
+				CC319EC5D34D4CC068C5DC76 /* Pods_TIFT_TIFTUITests.framework */,
+				994B3C3B67CE537626C838AE /* Pods_TIFTTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D30D29B27853E1200A2FD84 /* Build configuration list for PBXNativeTarget "TIFT" */;
 			buildPhases = (
+				42D24E81CD769EE443ABE018 /* [CP] Check Pods Manifest.lock */,
 				6D30D26A27853E0F00A2FD84 /* Sources */,
 				6D30D26B27853E0F00A2FD84 /* Frameworks */,
 				6D30D26C27853E0F00A2FD84 /* Resources */,
+				D39A907F5E79090361CD0B17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D30D29E27853E1200A2FD84 /* Build configuration list for PBXNativeTarget "TIFTTests" */;
 			buildPhases = (
+				A82382CAD5DC0BAB39710901 /* [CP] Check Pods Manifest.lock */,
 				6D30D28327853E1200A2FD84 /* Sources */,
 				6D30D28427853E1200A2FD84 /* Frameworks */,
 				6D30D28527853E1200A2FD84 /* Resources */,
@@ -269,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D30D2A127853E1200A2FD84 /* Build configuration list for PBXNativeTarget "TIFTUITests" */;
 			buildPhases = (
+				379342EF0D1B55F5B501ED16 /* [CP] Check Pods Manifest.lock */,
 				6D30D28D27853E1200A2FD84 /* Sources */,
 				6D30D28E27853E1200A2FD84 /* Frameworks */,
 				6D30D28F27853E1200A2FD84 /* Resources */,
+				613B37428F8674E8400E3E4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +389,7 @@
 				6D72D312278E069500A3FFEF /* HeaderTableViewCell.xib in Resources */,
 				6D30D28127853E1200A2FD84 /* LaunchScreen.storyboard in Resources */,
 				6D833B9B2788054300D31F4C /* HighlightedQuoteCollectionViewCell.xib in Resources */,
+				3C1488CB279CFD9000D1022B /* ThemeCollectionViewCell.xib in Resources */,
 				6D30D27E27853E1200A2FD84 /* Assets.xcassets in Resources */,
 				6D833B9F2788AEB200D31F4C /* CollectionHeaderView.xib in Resources */,
 				6D72D314278E320A00A3FFEF /* Viga-Regular.ttf in Resources */,
@@ -360,6 +415,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		379342EF0D1B55F5B501ED16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIFT-TIFTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42D24E81CD769EE443ABE018 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIFT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		613B37428F8674E8400E3E4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A82382CAD5DC0BAB39710901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIFTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D39A907F5E79090361CD0B17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIFT/Pods-TIFT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIFT/Pods-TIFT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TIFT/Pods-TIFT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D30D26A27853E0F00A2FD84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -373,9 +531,11 @@
 				6D30D27627853E0F00A2FD84 /* QuoteViewController.swift in Sources */,
 				6D833B882786978300D31F4C /* HomeViewController.swift in Sources */,
 				6D30D2A9278545C800A2FD84 /* Collection.swift in Sources */,
+				3C1488CA279CFD9000D1022B /* ThemeCollectionViewCell.swift in Sources */,
 				6D833BA2278A9AA000D31F4C /* CategoryCollectionViewCell.swift in Sources */,
 				6D833B8B2786A84400D31F4C /* QuoteTableViewCell.swift in Sources */,
 				6D30D27227853E0F00A2FD84 /* AppDelegate.swift in Sources */,
+				3C1488C7279CF0B600D1022B /* ThemeViewController.swift in Sources */,
 				6D833B8E278785E200D31F4C /* HelperExt.swift in Sources */,
 				6D833B9E2788AEB200D31F4C /* CollectionHeaderView.swift in Sources */,
 				6D30D27427853E0F00A2FD84 /* SceneDelegate.swift in Sources */,
@@ -554,6 +714,7 @@
 		};
 		6D30D29C27853E1200A2FD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2700ABFFC34F6AC559BF9D17 /* Pods-TIFT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,6 +743,7 @@
 		};
 		6D30D29D27853E1200A2FD84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED206682B3A2E8FDA47A9F3 /* Pods-TIFT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -610,6 +772,7 @@
 		};
 		6D30D29F27853E1200A2FD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463A3E35A094428B77F6003C /* Pods-TIFTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -635,6 +798,7 @@
 		};
 		6D30D2A027853E1200A2FD84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3FBAE706C6435054F2DB4F3 /* Pods-TIFTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,6 +824,7 @@
 		};
 		6D30D2A227853E1200A2FD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC500A30A0DF6C2CB977C98B /* Pods-TIFT-TIFTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -683,6 +848,7 @@
 		};
 		6D30D2A327853E1200A2FD84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D10D3AFF04E8ED58FDF812 /* Pods-TIFT-TIFTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
