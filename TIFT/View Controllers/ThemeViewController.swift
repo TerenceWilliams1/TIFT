@@ -24,7 +24,12 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
                   .image1,
                   .image2,
                   .image3,
-                  .image4]
+                  .image4,
+                  .valley,
+                  .plants1,
+                  .plants2,
+                  .blue,
+                  .green]
         
         
         let themeCollectionViewCell = UINib(nibName: "ThemeCollectionViewCell", bundle: nil)
@@ -69,8 +74,13 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
 enum Theme: String {
     case dark = "dark"
     case light = "light"
+    case plants1 = "plants1"
+    case plants2 = "plants2"
     case image1 = "t1"
     case image2 = "t2"
     case image3 = "t3"
     case image4 = "t4"
+    case valley = "valley"
+    case blue = "blue"
+    case green = "green"
 }

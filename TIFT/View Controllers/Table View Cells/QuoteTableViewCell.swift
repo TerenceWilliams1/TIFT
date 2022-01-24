@@ -37,6 +37,8 @@ class QuoteTableViewCell: UITableViewCell {
 
     //MARK: - Actions
     @IBAction func saveQuote() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         socialStack.isHidden = true
         let notificationDict: [String: IndexPath] = ["indexPath": quoteIndexPath]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "saveQuote"),
@@ -44,17 +46,23 @@ class QuoteTableViewCell: UITableViewCell {
                                         userInfo: notificationDict)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.socialStack.isHidden = false
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
         }
     }
     
     @IBAction func shareQuote() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         socialStack.isHidden = true
-        let notificationDict: [String: String] = ["quote": quoteLabel.text!, "author": authorLabel.text!]
+        let notificationDict: [String: String?] = ["quote": quoteLabel.text, "author": authorLabel.text]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "shareQuote"),
                                         object: nil,
-                                        userInfo: notificationDict)
+                                        userInfo: notificationDict as [AnyHashable : Any])
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.socialStack.isHidden = false
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
         }
     }
 }

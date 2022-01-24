@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "shareIcon-Dark.png",
+      "filename" : "saveIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -16,7 +16,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "shareIcon-Dark@2x.png",
+      "filename" : "saveIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -31,7 +31,7 @@
       "scale" : "2x"
     },
     {
-      "filename" : "shareIcon-Dark@3x.png",
+      "filename" : "saveIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     },

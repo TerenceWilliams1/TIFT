@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "save-Dark.png",
+      "filename" : "downloadIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -26,7 +26,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "save-Dark@2x.png",
+      "filename" : "downloadIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -51,7 +51,7 @@
       "scale" : "2x"
     },
     {
-      "filename" : "save-Dark@3x.png",
+      "filename" : "downloadIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     },

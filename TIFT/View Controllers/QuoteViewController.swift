@@ -62,19 +62,23 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let themeViewController = storyBoard.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
         
         let overlayController = DTOverlayController(viewController: themeViewController)
-        overlayController.overlayHeight = .dynamic(0.5)
+        overlayController.overlayHeight = .dynamic(0.7)
         overlayController.isPanGestureEnabled = false
         present(overlayController, animated: true, completion: nil)
     }
     
     @objc func shareQuote(_fromNotification notification: NSNotification) {
-        if let quote = notification.userInfo?["quote"] as? String,
-            let author = notification.userInfo?["author"] as? String {
-            let image = capturedImage()
-            let shareAll = [quote, author, image] as [Any]
-            let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
-            self.present(activityViewController, animated: true, completion: nil)
+        var sharingContent: [Any] = []
+        if let quote = notification.userInfo?["quote"] as? String {
+            sharingContent.append(quote)
         }
+        if let author = notification.userInfo?["author"] as? String {
+            sharingContent.append(author)
+        }
+        let image = capturedImage()
+        sharingContent.append(image)
+        let activityViewController = UIActivityViewController(activityItems: sharingContent, applicationActivities: nil)
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     @objc func saveQuote(_fromNotification notification: NSNotification) {
