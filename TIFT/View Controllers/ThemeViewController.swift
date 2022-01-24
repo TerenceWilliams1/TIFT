@@ -28,6 +28,9 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
                   .valley,
                   .plants1,
                   .plants2,
+                  .road,
+                  .roads,
+                  .road3,
                   .blue,
                   .green]
         
@@ -83,4 +86,7 @@ enum Theme: String {
     case valley = "valley"
     case blue = "blue"
     case green = "green"
+    case roads = "roads"
+    case road = "road"
+    case road3 = "road3"
 }
