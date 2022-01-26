@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DTOverlayController
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -89,6 +90,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     //MARK: - Actions
+    @IBAction func openSettings() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let settingsViewController = storyBoard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+        let navViewController = UINavigationController(rootViewController: settingsViewController)
+        navViewController.navigationBar.prefersLargeTitles = true
+        navViewController.navigationBar.barTintColor = .black
+        navViewController.navigationBar.titleTextAttributes = [ NSAttributedString.Key.foregroundColor : UIColor.white ]
+        navViewController.navigationBar.largeTitleTextAttributes = [ NSAttributedString.Key.foregroundColor : UIColor.white ]
+        
+        let overlayController = DTOverlayController(viewController: navViewController)
+        overlayController.overlayHeight = .dynamic(0.8)
+        overlayController.isPanGestureEnabled = false
+        present(overlayController, animated: true, completion: nil)
+    }
+    
     @IBAction func exploreAll() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let quoteViewController = storyBoard.instantiateViewController(withIdentifier: "QuoteViewController") as! QuoteViewController
