@@ -28,12 +28,13 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
                   .valley,
                   .plants1,
                   .plants2,
+                  .plants3,
+                  .plants4,
                   .road,
                   .roads,
                   .road3,
                   .blue,
                   .green]
-        
         
         let themeCollectionViewCell = UINib(nibName: "ThemeCollectionViewCell", bundle: nil)
         collectionView.register(themeCollectionViewCell, forCellWithReuseIdentifier: "ThemeCollectionViewCell")
@@ -79,6 +80,8 @@ enum Theme: String {
     case light = "light"
     case plants1 = "plants1"
     case plants2 = "plants2"
+    case plants3 = "plants3"
+    case plants4 = "plants4"
     case image1 = "t1"
     case image2 = "t2"
     case image3 = "t3"

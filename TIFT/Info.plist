@@ -4,6 +4,11 @@
 <dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Allow TIFT to save quotes to your photo library.</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram-stories</string>
+		<string>facebook-stories</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Viga-Regular.ttf</string>

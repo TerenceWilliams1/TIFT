@@ -10,6 +10,9 @@
 		3C1488C7279CF0B600D1022B /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1488C6279CF0B600D1022B /* ThemeViewController.swift */; };
 		3C1488CA279CFD9000D1022B /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */; };
 		3C1488CB279CFD9000D1022B /* ThemeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */; };
+		3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */; };
+		3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */; };
+		3CA4841427A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */; };
 		678EB9FCA216EFF8403373CF /* Pods_TIFT_TIFTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC319EC5D34D4CC068C5DC76 /* Pods_TIFT_TIFTUITests.framework */; };
 		6D30D27227853E0F00A2FD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27127853E0F00A2FD84 /* AppDelegate.swift */; };
 		6D30D27427853E0F00A2FD84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */; };
@@ -68,6 +71,9 @@
 		3C1488C6279CF0B600D1022B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeCollectionViewCell.xib; sourceTree = "<group>"; };
+		3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDrawerViewController.swift; sourceTree = "<group>"; };
+		3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareOptionCollectionViewCell.xib; sourceTree = "<group>"; };
 		463A3E35A094428B77F6003C /* Pods-TIFTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFTTests.debug.xcconfig"; path = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D30D26E27853E0F00A2FD84 /* TIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D30D27127853E0F00A2FD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 				6D833B872786978300D31F4C /* HomeViewController.swift */,
 				6D30D27527853E0F00A2FD84 /* QuoteViewController.swift */,
 				3C1488C6279CF0B600D1022B /* ThemeViewController.swift */,
+				3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */,
 				6D833B8F2787FDE400D31F4C /* Collection View Cells */,
 				6D833B892786A71E00D31F4C /* Table View Cells */,
 			);
@@ -262,6 +269,8 @@
 				6D833BA1278A9AA000D31F4C /* CategoryCollectionViewCell.xib */,
 				3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */,
 				3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */,
+				3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */,
+				3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */,
 			);
 			path = "Collection View Cells";
 			sourceTree = "<group>";
@@ -387,6 +396,7 @@
 			files = (
 				6D833BA3278A9AA000D31F4C /* CategoryCollectionViewCell.xib in Resources */,
 				6D72D312278E069500A3FFEF /* HeaderTableViewCell.xib in Resources */,
+				3CA4841427A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib in Resources */,
 				6D30D28127853E1200A2FD84 /* LaunchScreen.storyboard in Resources */,
 				6D833B9B2788054300D31F4C /* HighlightedQuoteCollectionViewCell.xib in Resources */,
 				3C1488CB279CFD9000D1022B /* ThemeCollectionViewCell.xib in Resources */,
@@ -530,7 +540,9 @@
 				6D30D27C27853E0F00A2FD84 /* TIFT.xcdatamodeld in Sources */,
 				6D30D27627853E0F00A2FD84 /* QuoteViewController.swift in Sources */,
 				6D833B882786978300D31F4C /* HomeViewController.swift in Sources */,
+				3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */,
 				6D30D2A9278545C800A2FD84 /* Collection.swift in Sources */,
+				3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */,
 				3C1488CA279CFD9000D1022B /* ThemeCollectionViewCell.swift in Sources */,
 				6D833BA2278A9AA000D31F4C /* CategoryCollectionViewCell.swift in Sources */,
 				6D833B8B2786A84400D31F4C /* QuoteTableViewCell.swift in Sources */,
@@ -718,6 +730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FVSZK45BZJ;
@@ -735,6 +748,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "terence-williams.TIFT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -747,6 +761,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FVSZK45BZJ;
@@ -764,6 +779,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "terence-williams.TIFT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
