@@ -41,10 +41,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
+        
+        refresh.attributedTitle = NSAttributedString(string: "")
+        refresh.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        table.refreshControl = refresh
     }
     
     func setupData() {
-        sections = [.heaader, .highlights, .categories]
+        sections = [.highlights, .categories]
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.exploreQuotes(_fromNotification:)),
                                                name: NSNotification.Name(rawValue: "exploreQuotes"),
@@ -69,6 +73,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         session.dataTask(with: artistURL) { (data, response
             , error) in
             guard let data = data else {
+                self.refresh.endRefreshing()
                 return
             }
             do {
@@ -79,10 +84,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 DispatchQueue.main.async {
                     print("\n\n***Successfully loaded quotes***\n\n")
                     self.table.reloadData()
+                    self.refresh.endRefreshing()
                     let generator = UIImpactFeedbackGenerator(style: .light)
                     generator.impactOccurred()
                 }
             } catch let err {
+                self.refresh.endRefreshing()
                 print("Error Loading: ", err)
             }
             print(data)
@@ -90,6 +97,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     //MARK: - Actions
+    @objc func refresh(_ sender: AnyObject) {
+        self.refresh.beginRefreshing()
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        self.fetchQuotes()
+    }
+    
     @IBAction func openSettings() {
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()

@@ -137,6 +137,12 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @objc func readText(_fromNotification notification: NSNotification) {
         if let text = notification.userInfo?["text"] as? String {
+            do {
+                try AVAudioSession.sharedInstance().setCategory(.playback,mode: .default)
+            } catch let error {
+                    print("This error message from SpeechSynthesizer \(error.localizedDescription)")
+            }
+            
             let speechSyntheizer = AVSpeechSynthesizer()
             let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: text)
             speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate

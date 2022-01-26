@@ -20,8 +20,7 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func setupData() {
-        themes = [.dark,
-                  .image1,
+        themes = [.image1,
                   .image2,
                   .image3,
                   .image4,
@@ -33,6 +32,7 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
                   .road,
                   .roads,
                   .road3,
+                  .dark,
                   .blue,
                   .green]
         

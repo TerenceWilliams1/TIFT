@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Home View Controller-->
+        <!--TIFT-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TIFT" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,8 +48,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27F-Ki-Zbs" secondAttribute="trailing" id="lcP-BQ-X2L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1k5-O6-bBl">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="8rc-eq-NXs">
+                    <navigationItem key="navigationItem" title="TIFT" largeTitleDisplayMode="always" id="1k5-O6-bBl">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="8rc-eq-NXs">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="openSettings" destination="BYZ-38-t0r" id="ifa-Ht-Ujd"/>
@@ -418,6 +418,7 @@
         <image name="image" width="28" height="24"/>
         <image name="plants4" width="910" height="1365"/>
         <image name="save" width="27" height="33"/>
+        <image name="settings" width="30" height="30"/>
         <image name="shareIcon" width="30" height="34"/>
         <image name="t2" width="1703" height="958"/>
         <systemColor name="labelColor">

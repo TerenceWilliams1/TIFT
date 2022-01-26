@@ -15,9 +15,9 @@ class ThemeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         themeImageView.layer.borderColor = UIColor.white.cgColor
-        themeImageView.layer.borderWidth = 0.5
-//        themeImageView.layer.cornerRadius = themeImageView.bounds.width / 2
-//        themeImageView.clipsToBounds = true 
+        themeImageView.layer.borderWidth = 0.3
+        themeImageView.layer.cornerRadius = themeImageView.bounds.width / 2
+        themeImageView.clipsToBounds = true
     }
     
     override func prepareForReuse() {

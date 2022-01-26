@@ -40,8 +40,31 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as? SettingsTableViewCell
         let section = sections[indexPath.row]
         cell?.titleLabel.text = title(_forSection: section)
-//        cell?.iconImageView.image = UIImage(named: section.rawValue)
+        cell?.iconImageView.image = UIImage(named: section.rawValue)
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let section = sections[indexPath.row]
+        switch section {
+        case .notifications:
+            break
+        case .widget:
+            break
+        case .favorties:
+            break
+        case .share:
+            break
+        case .contact:
+            break
+        case .review:
+            break
+        case .terms:
+            break
+        case .privacy:
+            break
+        }
+        
     }
     
     //MARK: - Helpers
@@ -73,7 +96,7 @@ enum SettingSection: String {
     case favorties = "favorites"
     case share = "share"
     case contact = "contact"
-    case review = "reivew"
+    case review = "review"
     case terms = "terms"
     case privacy = "privacy"
     
