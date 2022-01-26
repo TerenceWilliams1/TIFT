@@ -47,7 +47,7 @@ class HighlightsTableViewCell: UITableViewCell, UICollectionViewDataSource, UICo
         if let highlight = quotes?[indexPath.row] {
             cell?.quoteLabel.text = "★\n\(highlight.quote)"
             cell?.authorLabel.text = highlight.author
-            cell?.containerView.backgroundColor = UIColor.peach
+            cell?.containerView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
         }
         return cell!
     }

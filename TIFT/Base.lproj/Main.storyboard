@@ -22,6 +22,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plants4" translatesAutoresizingMaskIntoConstraints="NO" id="yXe-zK-V5m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="27F-Ki-Zbs">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,11 +35,15 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yXe-zK-V5m" secondAttribute="bottom" constant="-34" id="47L-iT-LfG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="27F-Ki-Zbs" secondAttribute="bottom" id="6JU-9B-NhD"/>
+                            <constraint firstItem="yXe-zK-V5m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-88" id="6oC-Ja-jfD"/>
                             <constraint firstItem="27F-Ki-Zbs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LtH-sb-zts"/>
                             <constraint firstItem="27F-Ki-Zbs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QPh-Vb-dBX"/>
+                            <constraint firstItem="yXe-zK-V5m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X6Z-Jr-qL7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yXe-zK-V5m" secondAttribute="trailing" id="kF1-EW-kpz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27F-Ki-Zbs" secondAttribute="trailing" id="lcP-BQ-X2L"/>
                         </constraints>
                     </view>
@@ -339,14 +346,12 @@
     </scenes>
     <resources>
         <image name="image" width="28" height="24"/>
+        <image name="plants4" width="910" height="1365"/>
         <image name="save" width="27" height="33"/>
         <image name="shareIcon" width="30" height="34"/>
         <image name="t2" width="1703" height="958"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

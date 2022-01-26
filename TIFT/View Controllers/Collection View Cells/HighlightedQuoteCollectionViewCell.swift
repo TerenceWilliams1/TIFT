@@ -17,9 +17,12 @@ class HighlightedQuoteCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.containerView.layer.cornerRadius = 10
+//        self.containerView.layer.cornerRadius = 10
         self.containerView.clipsToBounds = true
         self.containerView.layoutIfNeeded()
+        
+//        self.containerView.layer.borderWidth = 1.0
+        self.containerView.layer.borderColor = UIColor.white.cgColor
     }
     
     override func prepareForReuse() {

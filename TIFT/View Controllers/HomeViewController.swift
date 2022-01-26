@@ -27,6 +27,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         fetchQuotes()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func setupUI() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()

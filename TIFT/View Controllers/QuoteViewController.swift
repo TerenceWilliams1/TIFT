@@ -23,6 +23,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         setupData()
         scrollToQuote(_atIndex: index)
+        getRandomTheme()
     }
     
     func setupData() {
@@ -63,7 +64,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //MARK: - Actions
     @IBAction func changeTheme() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
+        let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -199,6 +200,28 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
             return UIImage(named: "tift-evergreen")!
         default:
             return UIImage(named: "tift-dark")!
+        }
+    }
+    
+    func getRandomTheme() {
+        let diceRoll = Int(arc4random_uniform(7) + 1)
+        switch diceRoll {
+        case 0:
+            backgroundImageView.image = UIImage(named: "plants1")
+        case 1:
+            backgroundImageView.image = UIImage(named: "plants2")
+        case 2:
+            backgroundImageView.image = UIImage(named: "plants3")
+        case 3:
+            backgroundImageView.image = UIImage(named: "road")
+        case 4:
+            backgroundImageView.image = UIImage(named: "roads")
+        case 5:
+            backgroundImageView.image = UIImage(named: "road3")
+        case 6:
+            backgroundImageView.image = UIImage(named: "valley")
+        default:
+            backgroundImageView.image = UIImage(named: "t2")
         }
     }
 }
