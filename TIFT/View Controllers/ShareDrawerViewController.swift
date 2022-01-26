@@ -69,6 +69,14 @@ class ShareDrawerViewController: UIViewController, UICollectionViewDelegate, UIC
             break
         case .copy:
             UIPasteboard.general.string = "\(quote!)\n\(author ?? "")"
+            let message = "Copied to clipboard"
+            let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                    alert.dismiss(animated: true, completion: nil)
+                }
+            }
             break
         case .speak:
             readText()

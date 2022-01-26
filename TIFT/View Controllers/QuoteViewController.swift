@@ -63,6 +63,9 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //MARK: - Actions
     @IBAction func changeTheme() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let themeViewController = storyBoard.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
         
@@ -96,7 +99,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
         let message = "Saved to Photo Library"
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.present(alert, animated: true, completion: nil)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                 alert.dismiss(animated: true, completion: nil)
@@ -136,7 +139,10 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let speechSyntheizer = AVSpeechSynthesizer()
             let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: text)
             speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate
-            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            speechUtterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.siri_female_en-GB_compact")
+            //    com.apple.ttsbundle.siri_male_en-US_compact
+            //    com.apple.ttsbundle.Daniel-compact
+            //    com.apple.ttsbundle.siri_female_en-GB_compact
             speechSyntheizer.speak(speechUtterance)
         }
     }
