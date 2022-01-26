@@ -238,13 +238,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="3H8-pM-Crl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xkl-kk-5DY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.082114951229999997" green="0.081499614040000001" blue="0.082331391949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="gaZ-KD-vTd" firstAttribute="bottom" secondItem="xkl-kk-5DY" secondAttribute="bottom" id="7h6-Cv-wCx"/>
                             <constraint firstItem="gaZ-KD-vTd" firstAttribute="top" secondItem="VF7-67-RBF" secondAttribute="bottom" id="Dfc-Qm-jpv"/>
@@ -299,7 +299,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kmr-mR-B2E"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.082114951228353009" green="0.081499614043152563" blue="0.082331391953930466" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Kmr-mR-B2E" firstAttribute="bottom" secondItem="kYv-4b-ScV" secondAttribute="bottom" id="tJz-yh-SCd"/>
                             <constraint firstItem="kYv-4b-ScV" firstAttribute="top" secondItem="Kmr-mR-B2E" secondAttribute="top" id="vWj-z5-hf7"/>

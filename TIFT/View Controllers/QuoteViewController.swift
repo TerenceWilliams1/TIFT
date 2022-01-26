@@ -7,6 +7,7 @@
 
 import UIKit
 import DTOverlayController
+import AVFoundation
 
 class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -38,6 +39,10 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         NotificationCenter.default.addObserver(self, selector: #selector(self.changeTheme(_fromNotification:)),
                                                name: NSNotification.Name(rawValue: "changeTheme"),
                                                object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.readText(_fromNotification:)),
+                                               name: NSNotification.Name(rawValue: "readText"),
+                                               object: nil)
     }
     
     //MARK: - Helpers
@@ -62,7 +67,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let themeViewController = storyBoard.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
         
         let overlayController = DTOverlayController(viewController: themeViewController)
-        overlayController.overlayHeight = .dynamic(0.7)
+        overlayController.overlayHeight = .dynamic(0.8)
         overlayController.isPanGestureEnabled = false
         present(overlayController, animated: true, completion: nil)
     }
@@ -89,30 +94,14 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let image = capturedImage()
         UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
 
-        let message = "Quote Saved Successfully"
+        let message = "Saved to Photo Library"
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.present(alert, animated: true, completion: nil)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                 alert.dismiss(animated: true, completion: nil)
             }
         }
-//        if let indexPath = notification.userInfo?["indexPath"] as? IndexPath {
-//            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = .clear// UIColor.systemGroupedBackground
-//            let quoteData = self.table.cellForRow(at: indexPath)?.contentView.asImage().pngData()
-//            self.table.cellForRow(at: indexPath)?.contentView.backgroundColor = .clear
-//
-//            UIImageWriteToSavedPhotosAlbum((UIImage(data: quoteData!) ?? UIImage(named: ""))!, self, nil, nil)
-//
-//            let message = "Quote Saved Successfully"
-//            let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-//                self.present(alert, animated: true, completion: nil)
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-//                    alert.dismiss(animated: true, completion: nil)
-//                }
-//            }
-//        }
     }
     
     @objc func changeTheme(_fromNotification notification: NSNotification) {
@@ -140,6 +129,16 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         UIGraphicsEndImageContext()
         
         return image!
+    }
+    
+    @objc func readText(_fromNotification notification: NSNotification) {
+        if let text = notification.userInfo?["text"] as? String {
+            let speechSyntheizer = AVSpeechSynthesizer()
+            let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: text)
+            speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            speechSyntheizer.speak(speechUtterance)
+        }
     }
 
     //MARK: - Table View

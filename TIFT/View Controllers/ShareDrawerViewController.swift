@@ -25,9 +25,11 @@ class ShareDrawerViewController: UIViewController, UICollectionViewDelegate, UIC
     
     func setupData() {
         options = [.instagramStory,
-                   .message,
                    .facebookStory,
-                   .more]
+                   .message,
+                   .more,
+                   .copy,
+                   .speak]
         
         let shareOptionCollectionViewCell = UINib(nibName: "ShareOptionCollectionViewCell", bundle: nil)
         collectionView.register(shareOptionCollectionViewCell, forCellWithReuseIdentifier: "ShareOptionCollectionViewCell")
@@ -64,6 +66,12 @@ class ShareDrawerViewController: UIViewController, UICollectionViewDelegate, UIC
             break
         case .more:
             share()
+            break
+        case .copy:
+            UIPasteboard.general.string = "\(quote!)\n\(author ?? "")"
+            break
+        case .speak:
+            readText()
             break
         }
     }
@@ -143,6 +151,16 @@ class ShareDrawerViewController: UIViewController, UICollectionViewDelegate, UIC
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func readText() {
+        let notificationDict: [String: String?] = ["text": quote]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "readText"),
+                                        object: nil,
+                                        userInfo: notificationDict as [AnyHashable : Any])
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
 }
 
 enum ShareOption: String {
@@ -151,4 +169,6 @@ enum ShareOption: String {
     case facebookStory = "facebook"
     case save = "save"
     case more = "more"
+    case copy = "copy text"
+    case speak = "speak"
 }

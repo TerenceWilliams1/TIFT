@@ -13,6 +13,7 @@
 		3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */; };
 		3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */; };
 		3CA4841427A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */; };
+		3CA4841627A0F86B00A15BAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA4841527A0F86B00A15BAA /* AVFoundation.framework */; };
 		678EB9FCA216EFF8403373CF /* Pods_TIFT_TIFTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC319EC5D34D4CC068C5DC76 /* Pods_TIFT_TIFTUITests.framework */; };
 		6D30D27227853E0F00A2FD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27127853E0F00A2FD84 /* AppDelegate.swift */; };
 		6D30D27427853E0F00A2FD84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */; };
@@ -74,6 +75,7 @@
 		3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDrawerViewController.swift; sourceTree = "<group>"; };
 		3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareOptionCollectionViewCell.xib; sourceTree = "<group>"; };
+		3CA4841527A0F86B00A15BAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		463A3E35A094428B77F6003C /* Pods-TIFTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFTTests.debug.xcconfig"; path = "Target Support Files/Pods-TIFTTests/Pods-TIFTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D30D26E27853E0F00A2FD84 /* TIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D30D27127853E0F00A2FD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA4841627A0F86B00A15BAA /* AVFoundation.framework in Frameworks */,
 				D1599595A0C950FF1B25C5A5 /* Pods_TIFT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +281,7 @@
 		9300F9B0C6B2914C7842D7E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CA4841527A0F86B00A15BAA /* AVFoundation.framework */,
 				16AA352ACFF752A4D295EC7C /* Pods_TIFT.framework */,
 				CC319EC5D34D4CC068C5DC76 /* Pods_TIFT_TIFTUITests.framework */,
 				994B3C3B67CE537626C838AE /* Pods_TIFTTests.framework */,
