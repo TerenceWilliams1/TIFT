@@ -10,6 +10,7 @@
 		3C1488C7279CF0B600D1022B /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1488C6279CF0B600D1022B /* ThemeViewController.swift */; };
 		3C1488CA279CFD9000D1022B /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */; };
 		3C1488CB279CFD9000D1022B /* ThemeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */; };
+		3C43C97F27A128B300CF7FC6 /* darkPlant@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C43C97E27A128B300CF7FC6 /* darkPlant@3x.jpg */; };
 		3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */; };
 		3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */; };
 		3CA4841427A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */; };
@@ -72,6 +73,7 @@
 		3C1488C6279CF0B600D1022B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		3C1488C8279CFD9000D1022B /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C1488C9279CFD9000D1022B /* ThemeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C43C97E27A128B300CF7FC6 /* darkPlant@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "darkPlant@3x.jpg"; sourceTree = "<group>"; };
 		3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDrawerViewController.swift; sourceTree = "<group>"; };
 		3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareOptionCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3C43C97D27A1289400CF7FC6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3C43C97E27A128B300CF7FC6 /* darkPlant@3x.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6D30D26527853E0F00A2FD84 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 				6D30D27127853E0F00A2FD84 /* AppDelegate.swift */,
 				6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */,
 				6D30D27727853E0F00A2FD84 /* Main.storyboard */,
+				3C43C97D27A1289400CF7FC6 /* Assets */,
 				6D833B8C278785CD00D31F4C /* Utilities */,
 				6D30D2A527853FF800A2FD84 /* Models */,
 				6D30D2A427853FEC00A2FD84 /* View Controllers */,
@@ -407,6 +418,7 @@
 				6D30D27E27853E1200A2FD84 /* Assets.xcassets in Resources */,
 				6D833B9F2788AEB200D31F4C /* CollectionHeaderView.xib in Resources */,
 				6D72D314278E320A00A3FFEF /* Viga-Regular.ttf in Resources */,
+				3C43C97F27A128B300CF7FC6 /* darkPlant@3x.jpg in Resources */,
 				6D833BAB278AAAD300D31F4C /* CategoriesTableViewCell.xib in Resources */,
 				6D833BA7278A9B3A00D31F4C /* HighlightsTableViewCell.xib in Resources */,
 				6D30D27927853E0F00A2FD84 /* Main.storyboard in Resources */,

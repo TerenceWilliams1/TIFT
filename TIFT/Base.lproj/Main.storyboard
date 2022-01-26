@@ -47,7 +47,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27F-Ki-Zbs" secondAttribute="trailing" id="lcP-BQ-X2L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1k5-O6-bBl"/>
+                    <navigationItem key="navigationItem" id="1k5-O6-bBl">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="8rc-eq-NXs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="table" destination="27F-Ki-Zbs" id="PXo-aG-jFT"/>
                         <segue destination="yEO-vz-crc" kind="push" id="V4f-1V-D2o"/>
