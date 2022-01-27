@@ -134,7 +134,7 @@ class ShareDrawerViewController: UIViewController, UICollectionViewDelegate, UIC
             UIPasteboard.general.setItems([pasterboardItems])
             UIApplication.shared.open(instagramUrl)
         } else {
-            let alert = UIAlertController(title: "", message: "Could not open Instagram", preferredStyle: .alert)
+            let alert = UIAlertController(title: "", message: "Could not open Facebook", preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 alert.dismiss(animated: true, completion: nil)

@@ -21,9 +21,21 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
         setupData()
         scrollToQuote(_atIndex: index)
         getRandomTheme()
+    }
+    
+    func setupUI() {
+        let loadingView = UIActivityIndicatorView()
+        loadingView.startAnimating()
+        loadingView.tintColor = .white
+        loadingView.sizeToFit()
+        
+        let loader = UIBarButtonItem(customView: loadingView)
+        
+        self.navigationController?.navigationItem.rightBarButtonItems = [loader]
     }
     
     func setupData() {
@@ -51,14 +63,6 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let quoteIndexPath = IndexPath(row: index, section: 0)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.table.scrollToRow(at: quoteIndexPath, at: UITableView.ScrollPosition.top, animated: true)
-        }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if traitCollection.userInterfaceStyle == .light {
-            print("Light mode")
-        } else {
-            print("Dark mode")
         }
     }
     

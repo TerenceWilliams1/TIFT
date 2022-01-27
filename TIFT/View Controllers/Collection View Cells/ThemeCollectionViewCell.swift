@@ -10,9 +10,12 @@ import UIKit
 class ThemeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var themeImageView: UIImageView!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        loadingView.startAnimating()
         
         themeImageView.layer.borderColor = UIColor.white.cgColor
         themeImageView.layer.borderWidth = 0.3

@@ -54,7 +54,9 @@ class ThemeViewController: UIViewController, UICollectionViewDelegate, UICollect
             cell?.themeImageView.backgroundColor = .black
             break
         default:
-            cell?.themeImageView.image = UIImage(named: theme.rawValue)
+            DispatchQueue.main.async {
+                cell?.themeImageView.image = UIImage(named: theme.rawValue)
+            }
             break
         }
         

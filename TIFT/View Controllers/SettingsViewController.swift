@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SafariServices
 
-class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var table: UITableView!
     
@@ -24,7 +25,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                     .share,
                     .contact,
                     .widget,
-                    .terms,
                     .privacy]
         
         let settingsTableViewCell = UINib(nibName: "SettingsTableViewCell", bundle: nil)
@@ -48,23 +48,29 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let section = sections[indexPath.row]
         switch section {
         case .notifications:
+            UIApplication.shared.open(URL.init(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
             break
         case .widget:
             break
         case .favorties:
             break
         case .share:
+            let text = "Hey, you should check out the TIFT app. It's full of inspiring quotes."
+            let textToShare = [ text] as [Any]
+            
+            let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
             break
         case .contact:
+            self.openWebLink(url: "https://www.oaklandsoftwareco.com/contact")
             break
         case .review:
             break
-        case .terms:
-            break
         case .privacy:
+            self.openWebLink(url: "https://www.oaklandsoftwareco.com/privacy")
             break
         }
-        
     }
     
     //MARK: - Helpers
@@ -82,11 +88,18 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             return "Contact Us"
         case .review:
             return "Leave us a Review"
-        case .terms:
-            return "Terms & Conditions"
         case .privacy:
             return "Privacy Policy"
         }
+    }
+    
+    func openWebLink(url:String) {
+        let url = URL.init(string: url)
+        let safari = SFSafariViewController.init(url: url!)
+        safari.delegate = self
+        safari.modalPresentationCapturesStatusBarAppearance = true
+        safari.view.tintColor = self.view.tintColor
+        self.present(safari, animated: true, completion: nil)
     }
 }
 
@@ -97,7 +110,6 @@ enum SettingSection: String {
     case share = "share"
     case contact = "contact"
     case review = "review"
-    case terms = "terms"
     case privacy = "privacy"
     
 }

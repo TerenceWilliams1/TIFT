@@ -297,7 +297,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6dg-vN-MaY"/>
-                        <color key="backgroundColor" red="0.21418054325064428" green="0.21418054325064428" blue="0.21418054325064428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.082352928820000004" green="0.082352928820000004" blue="0.082352928820000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6dg-vN-MaY" firstAttribute="bottom" secondItem="QP5-5O-dNR" secondAttribute="bottom" id="Nfb-vf-hyx"/>
                             <constraint firstItem="QP5-5O-dNR" firstAttribute="leading" secondItem="6dg-vN-MaY" secondAttribute="leading" id="O8u-8d-nVe"/>
@@ -377,6 +377,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
