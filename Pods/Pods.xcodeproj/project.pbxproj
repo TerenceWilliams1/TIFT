@@ -6,95 +6,155 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09A5A4D585F2B2C7D977A4F1E5213117 /* Build configuration list for PBXAggregateTarget "OneSignal" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = OneSignal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		00F7447509BED85765AF17FC03B772D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0A85F4346B0D62E8AADA86392CF148C1 /* DTOverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D430A835867B73F7E30CC616AF7FED0 /* DTOverlayPresentationController.swift */; };
-		125F9E5B91A0D3D3DCFF3272D13B201A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		30FD257C39D269D6514C1B388FE97145 /* DTScrollViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8A9140078C50003495EF6C2C62B884 /* DTScrollViewRepresentable.swift */; };
-		729E08173C218B66356C9799F8712A5C /* Pods-TIFT-TIFTUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F44C1F22CB0E16749D5A742EA9AB07B5 /* Pods-TIFT-TIFTUITests-dummy.m */; };
+		0A85F4346B0D62E8AADA86392CF148C1 /* DTOverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327A9D1084CCFD840FCEC60200DB4689 /* DTOverlayPresentationController.swift */; };
+		0E79BB81084D705ECC396AE8CD481558 /* Pods-TIFT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124AED9F279252E969D8DDE3880037B6 /* Pods-TIFT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F313CE5B14382A85BBC06490BC0B1D2 /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8EA6D82A6A1472F9CDF075D33B214 /* DZNEmptyDataSet-dummy.m */; };
+		125F9E5B91A0D3D3DCFF3272D13B201A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		2074D8FFED1B7FA59FFC01A20D9097C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		2CBD74A651BC7F8E27D23CDE69CD4626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		30FD257C39D269D6514C1B388FE97145 /* DTScrollViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CE54D49D5EEA32EFBF388FA6E70C2 /* DTScrollViewRepresentable.swift */; };
+		4BE0E5EAB11950A0758C73468640EEE0 /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEB4FE69DB940631ED3FD10E94156B9 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AAF5F2DFBE445CBADB1ACAE5C9EE86B /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 874640C2D7CC1F6295433116CEB51BE3 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D41BE5D2404F74DCD82B29AE9ECAFBD /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC05B04BC9DDCE18A0CFE2AA29ECF68 /* UIScrollView+EmptyDataSet.m */; };
 		73106A8A6C394C98D9D3BA97F0AF4668 /* Pods-TIFTTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 738E98BCDD5C4DCCB232EC05204A7472 /* Pods-TIFTTests-dummy.m */; };
-		7D9AE5D589C7A53A852E4EA2233972B8 /* TransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9592F549E46F4BCC454335C894733 /* TransitioningAnimator.swift */; };
-		82A4A3F65D6263B85173493BBE949D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		83DCC569311E36ABA6D65D0D05523649 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D97A22F8BFD9CB6E81B41F2684F315B /* InteractiveTransition.swift */; };
-		A78F69C3E35DF9C925D968E4F29BAB90 /* Pods-TIFT-TIFTUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC463ADAF984D5799C4C4BFE6016E521 /* Pods-TIFT-TIFTUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D9AE5D589C7A53A852E4EA2233972B8 /* TransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A4ECF043A325DD54324D220B65E81 /* TransitioningAnimator.swift */; };
+		82A4A3F65D6263B85173493BBE949D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		83DCC569311E36ABA6D65D0D05523649 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B88B49372446B54AA00C5D55D08A7C /* InteractiveTransition.swift */; };
+		92EB6ADA5653BDDBFAD4653B6169A160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A233BB84EE377CD8179335D47B904060 /* Pods-TIFT-TIFTUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC463ADAF984D5799C4C4BFE6016E521 /* Pods-TIFT-TIFTUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B33F53F45B163DC65EAC752166D07D46 /* Pods-TIFTTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FCB884199204E4A1F1F8803E2422A08 /* Pods-TIFTTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF4ACBA911E7225100820A3D5842101F /* DTOverlayController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AACBCD5E8C1F4FA3D1CBBF4C3B2FE58 /* DTOverlayController-dummy.m */; };
-		BF55DE033583735A7EB8A0EE23B66A5F /* Pods-TIFT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BA440C1BC1C38ED4FD11A4BF2233 /* Pods-TIFT-dummy.m */; };
-		C5CEE1A04A1FC6BAB2F0BB050BD7F401 /* DTOverlayController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B6AE64546D6653867557013F4DC27B /* DTOverlayController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB75DDEBED0457E8B9572D64CB0F961E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E0B9C7F431D94753FA93BF4983BD2B6A /* DTOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF772A4AA7266AABD7EBE286D88375E /* DTOverlayController.swift */; };
-		FEA736CEA48B58783C15AAAC1B7149BC /* Pods-TIFT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124AED9F279252E969D8DDE3880037B6 /* Pods-TIFT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE7B6D28CE5AD2123982B5A7FA2912C /* Pods-TIFT-TIFTUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F44C1F22CB0E16749D5A742EA9AB07B5 /* Pods-TIFT-TIFTUITests-dummy.m */; };
+		BF4ACBA911E7225100820A3D5842101F /* DTOverlayController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FF42DE43A5CA55C3FDD80DE2212A72 /* DTOverlayController-dummy.m */; };
+		C5CEE1A04A1FC6BAB2F0BB050BD7F401 /* DTOverlayController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1ECA31F4A3FD1000E905927F913E6CB /* DTOverlayController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D295C576F34F80487A0FA37A1DDA22E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		E0B9C7F431D94753FA93BF4983BD2B6A /* DTOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F107EA963AF04B0791F6048D6E0B5 /* DTOverlayController.swift */; };
+		FE51A74D664B2E35AACD38993E5E73CB /* Pods-TIFT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BA440C1BC1C38ED4FD11A4BF2233 /* Pods-TIFT-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D0C8227D2849B2966493B73609E9243 /* PBXContainerItemProxy */ = {
+		1B7706F3C1694007EE3CB56E608CD56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A54C567BAF7759AC205CB50EDD7DA1E;
+			remoteInfo = DTOverlayController;
+		};
+		1DA53ADD9CFA77FD83C5DE2BFB8DF640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A54C567BAF7759AC205CB50EDD7DA1E;
+			remoteInfo = DTOverlayController;
+		};
+		49A5A93C5350AFF01D6278CE58C7B686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
+			remoteInfo = OneSignal;
+		};
+		54C490349B95FCF66CE565C86BC389E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4B44A868BF564EE79986C06C01A3C1FF;
 			remoteInfo = "Pods-TIFT";
 		};
-		6199C9AB9E978AD11284142311D74B20 /* PBXContainerItemProxy */ = {
+		72B26DE0E36EB99CE24F27913E0F9D50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A54C567BAF7759AC205CB50EDD7DA1E;
-			remoteInfo = DTOverlayController;
+			remoteGlobalIDString = F1BCD9702276377FB5B3BDB6EAF709D7;
+			remoteInfo = DZNEmptyDataSet;
 		};
-		8122DDC0FE56B13122AEB5BE633E8817 /* PBXContainerItemProxy */ = {
+		735F5ABA4A78D6272D5AF27AE1E1CA4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A54C567BAF7759AC205CB50EDD7DA1E;
-			remoteInfo = DTOverlayController;
+			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
+			remoteInfo = OneSignal;
+		};
+		83378782C727AE7A97F394373C1699BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1BCD9702276377FB5B3BDB6EAF709D7;
+			remoteInfo = DZNEmptyDataSet;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00786B41AA02406520846A32079D6632 /* DTOverlayController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DTOverlayController-Info.plist"; sourceTree = "<group>"; };
 		03B8F2712452C27C0B6BB8C89D1F3154 /* Pods-TIFT-TIFTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT-TIFTUITests.release.xcconfig"; sourceTree = "<group>"; };
 		07A7DE3F2AD68BAB80EB83D9E4FD9090 /* Pods-TIFTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		09F9A9977845B58508359BB0F5E13ACA /* DZNEmptyDataSet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.release.xcconfig; sourceTree = "<group>"; };
 		1194D42BBBC49311EACCA014DB10F791 /* Pods-TIFT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TIFT-frameworks.sh"; sourceTree = "<group>"; };
+		11FF42DE43A5CA55C3FDD80DE2212A72 /* DTOverlayController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTOverlayController-dummy.m"; sourceTree = "<group>"; };
 		124AED9F279252E969D8DDE3880037B6 /* Pods-TIFT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TIFT-umbrella.h"; sourceTree = "<group>"; };
 		171ACCAEA15844C5925A891240047B8C /* Pods-TIFT-TIFTUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-TIFTUITests-Info.plist"; sourceTree = "<group>"; };
-		1D430A835867B73F7E30CC616AF7FED0 /* DTOverlayPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTOverlayPresentationController.swift; path = DTOverlayController/Classes/DTOverlayPresentationController.swift; sourceTree = "<group>"; };
-		213E66BFAE28375D5DBBC0C974CD31A5 /* DTOverlayController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTOverlayController.debug.xcconfig; sourceTree = "<group>"; };
+		25B88B49372446B54AA00C5D55D08A7C /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = DTOverlayController/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
 		278C3DD5556FC874A180DD4368B0AB9A /* Pods-TIFTTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TIFTTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2EE9592F549E46F4BCC454335C894733 /* TransitioningAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitioningAnimator.swift; path = DTOverlayController/Classes/TransitioningAnimator.swift; sourceTree = "<group>"; };
+		327A9D1084CCFD840FCEC60200DB4689 /* DTOverlayPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTOverlayPresentationController.swift; path = DTOverlayController/Classes/DTOverlayPresentationController.swift; sourceTree = "<group>"; };
+		32B3DA64CE42C0FA87585985F283F826 /* DTOverlayController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTOverlayController.release.xcconfig; sourceTree = "<group>"; };
 		3449648521ED326922E20B4D79A6638E /* Pods-TIFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT.debug.xcconfig"; sourceTree = "<group>"; };
-		3AACBCD5E8C1F4FA3D1CBBF4C3B2FE58 /* DTOverlayController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTOverlayController-dummy.m"; sourceTree = "<group>"; };
 		412308A181DCB975F2345E00B03B4143 /* Pods-TIFTTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TIFTTests.modulemap"; sourceTree = "<group>"; };
+		4161E3323434D9A8351598F32B7B71B2 /* OneSignal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.debug.xcconfig; sourceTree = "<group>"; };
 		435B8F875BE52896A6A184E68FBE92AB /* Pods-TIFTTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TIFTTests"; path = Pods_TIFTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D97A22F8BFD9CB6E81B41F2684F315B /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = DTOverlayController/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
 		4FCB884199204E4A1F1F8803E2422A08 /* Pods-TIFTTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TIFTTests-umbrella.h"; sourceTree = "<group>"; };
+		556A81B06A0674469FB6300B0CAE3740 /* DTOverlayController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTOverlayController-prefix.pch"; sourceTree = "<group>"; };
 		5B53B4D948E3D07CFF8C3810DE5888FD /* Pods-TIFT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TIFT.modulemap"; sourceTree = "<group>"; };
-		5B67537B81925318AD6FAE39484F4DC9 /* DTOverlayController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTOverlayController-prefix.pch"; sourceTree = "<group>"; };
+		5DA4577FE3BC4A03751108FFED07B385 /* DZNEmptyDataSet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B2F97ADADF634F53A16B2CB78AB535 /* Pods-TIFT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TIFT-acknowledgements.markdown"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		682A12A3AF5AB5CE556F408E70FBEBC5 /* OneSignal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.release.xcconfig; sourceTree = "<group>"; };
 		738E98BCDD5C4DCCB232EC05204A7472 /* Pods-TIFTTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TIFTTests-dummy.m"; sourceTree = "<group>"; };
-		7AF772A4AA7266AABD7EBE286D88375E /* DTOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTOverlayController.swift; path = DTOverlayController/Classes/DTOverlayController.swift; sourceTree = "<group>"; };
+		7C7A4ECF043A325DD54324D220B65E81 /* TransitioningAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitioningAnimator.swift; path = DTOverlayController/Classes/TransitioningAnimator.swift; sourceTree = "<group>"; };
 		80C8E3A209FED953B9F6E65185EAA01A /* Pods-TIFTTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFTTests-Info.plist"; sourceTree = "<group>"; };
 		84BB4BB4514E106600E010903D7E85AA /* Pods-TIFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT.release.xcconfig"; sourceTree = "<group>"; };
-		8CEC7200F08130E49DA622087EB1DA43 /* DTOverlayController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTOverlayController.release.xcconfig; sourceTree = "<group>"; };
+		86A8EA6D82A6A1472F9CDF075D33B214 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		874640C2D7CC1F6295433116CEB51BE3 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TIFT-TIFTUITests"; path = Pods_TIFT_TIFTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC05B04BC9DDCE18A0CFE2AA29ECF68 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A37116CD7BD7D9BCC61C95B8FC09C77D /* DTOverlayController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTOverlayController.debug.xcconfig; sourceTree = "<group>"; };
 		ABE47678B26598BB3488F52FA761F10D /* Pods-TIFT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-acknowledgements.plist"; sourceTree = "<group>"; };
 		AC463ADAF984D5799C4C4BFE6016E521 /* Pods-TIFT-TIFTUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TIFT-TIFTUITests-umbrella.h"; sourceTree = "<group>"; };
+		AEA1FF16B6D2E1ACA47000A8EA19901F /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
 		B0B4BA440C1BC1C38ED4FD11A4BF2233 /* Pods-TIFT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TIFT-dummy.m"; sourceTree = "<group>"; };
 		B57D05A264885E69C91B245817DB8CD7 /* Pods-TIFT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TIFT"; path = Pods_TIFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6366380821DDFFD46908E0D21F08307 /* Pods-TIFT-TIFTUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-TIFTUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BED75EA44C243F2B59AB5B685716E133 /* DZNEmptyDataSet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DZNEmptyDataSet-Info.plist"; sourceTree = "<group>"; };
 		BF17E95BF405CF1FA48E218FA2E838B4 /* Pods-TIFT-TIFTUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TIFT-TIFTUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C35B7343A786F1F8889EB74EE47EA5AF /* DTOverlayController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DTOverlayController.modulemap; sourceTree = "<group>"; };
+		BFEB4FE69DB940631ED3FD10E94156B9 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		C54F13257C724549344DAA55B857B5AD /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
 		C5F6E44642F904EFC7DF2BA4F3A1119B /* Pods-TIFT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFT-Info.plist"; sourceTree = "<group>"; };
+		CAFD40492D7012B9189A1CA2ED42E595 /* DTOverlayController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DTOverlayController.modulemap; sourceTree = "<group>"; };
 		CD270542D06B9426D08912964CE6E085 /* Pods-TIFTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFTTests.release.xcconfig"; sourceTree = "<group>"; };
 		D117372DE890264EE5C022FB0854C3ED /* Pods-TIFT-TIFTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TIFT-TIFTUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1B6AE64546D6653867557013F4DC27B /* DTOverlayController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTOverlayController-umbrella.h"; sourceTree = "<group>"; };
+		D1ECA31F4A3FD1000E905927F913E6CB /* DTOverlayController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTOverlayController-umbrella.h"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D33F107EA963AF04B0791F6048D6E0B5 /* DTOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTOverlayController.swift; path = DTOverlayController/Classes/DTOverlayController.swift; sourceTree = "<group>"; };
 		D41FBA5D6E5374FDD3F25FA09CA4330A /* DTOverlayController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DTOverlayController; path = DTOverlayController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB8A9140078C50003495EF6C2C62B884 /* DTScrollViewRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTScrollViewRepresentable.swift; path = DTOverlayController/Classes/DTScrollViewRepresentable.swift; sourceTree = "<group>"; };
 		DBC2A7E594A431DE6465DD1EF908E8BD /* Pods-TIFT-TIFTUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TIFT-TIFTUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E644DB99212B42780303991888B03722 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		E6F2A0BE3D14B56EF8A5CB17DBBC50B3 /* DZNEmptyDataSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.debug.xcconfig; sourceTree = "<group>"; };
 		E78FC7E10EB6642539C7631AD4B4E2A2 /* Pods-TIFT-TIFTUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TIFT-TIFTUITests.modulemap"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EC1F6A29607661DFA7DE8CB0C0F1328F /* Pods-TIFTTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TIFTTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F403882700E649E0C679B913B1EBC0FF /* DTOverlayController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DTOverlayController-Info.plist"; sourceTree = "<group>"; };
 		F44C1F22CB0E16749D5A742EA9AB07B5 /* Pods-TIFT-TIFTUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TIFT-TIFTUITests-dummy.m"; sourceTree = "<group>"; };
+		F97CE54D49D5EEA32EFBF388FA6E70C2 /* DTScrollViewRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DTScrollViewRepresentable.swift; path = DTOverlayController/Classes/DTScrollViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,19 +166,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		329E0381648185B395A3979C2FEE1021 /* Frameworks */ = {
+		86359E921934EC066051DF58FDBF285E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB75DDEBED0457E8B9572D64CB0F961E /* Foundation.framework in Frameworks */,
+				92EB6ADA5653BDDBFAD4653B6169A160 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5640FFBF9F3B2404B3E8324332018CB8 /* Frameworks */ = {
+		A6F66B4A1BA8A915E40DF15E1A2140DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F7447509BED85765AF17FC03B772D4 /* Foundation.framework in Frameworks */,
+				2CBD74A651BC7F8E27D23CDE69CD4626 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,9 +190,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADC613EB65919EC2A824D24DF5E45EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2074D8FFED1B7FA59FFC01A20D9097C0 /* Foundation.framework in Frameworks */,
+				D295C576F34F80487A0FA37A1DDA22E4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0369D5F9D5D8085D37856D48964D6872 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4161E3323434D9A8351598F32B7B71B2 /* OneSignal.debug.xcconfig */,
+				682A12A3AF5AB5CE556F408E70FBEBC5 /* OneSignal.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OneSignal";
+			sourceTree = "<group>";
+		};
+		075086B997914B1B1285BB53E6261650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D41FBA5D6E5374FDD3F25FA09CA4330A /* DTOverlayController */,
+				5DA4577FE3BC4A03751108FFED07B385 /* DZNEmptyDataSet */,
+				B57D05A264885E69C91B245817DB8CD7 /* Pods-TIFT */,
+				8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */,
+				435B8F875BE52896A6A184E68FBE92AB /* Pods-TIFTTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37AEE28EE07FCD47740E193512D80AFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1FF16B6D2E1ACA47000A8EA19901F /* DZNEmptyDataSet.modulemap */,
+				86A8EA6D82A6A1472F9CDF075D33B214 /* DZNEmptyDataSet-dummy.m */,
+				BED75EA44C243F2B59AB5B685716E133 /* DZNEmptyDataSet-Info.plist */,
+				E644DB99212B42780303991888B03722 /* DZNEmptyDataSet-prefix.pch */,
+				BFEB4FE69DB940631ED3FD10E94156B9 /* DZNEmptyDataSet-umbrella.h */,
+				E6F2A0BE3D14B56EF8A5CB17DBBC50B3 /* DZNEmptyDataSet.debug.xcconfig */,
+				09F9A9977845B58508359BB0F5E13ACA /* DZNEmptyDataSet.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZNEmptyDataSet";
+			sourceTree = "<group>";
+		};
 		41ECC415AB52014239CFA16B1B92F171 /* Pods-TIFT */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,46 +264,67 @@
 			path = "Target Support Files/Pods-TIFT";
 			sourceTree = "<group>";
 		};
-		47801BF3FDA9BE76B643561DF841B46D /* Support Files */ = {
+		4EE261A8FFCDEE62C0131B604760D866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C35B7343A786F1F8889EB74EE47EA5AF /* DTOverlayController.modulemap */,
-				3AACBCD5E8C1F4FA3D1CBBF4C3B2FE58 /* DTOverlayController-dummy.m */,
-				F403882700E649E0C679B913B1EBC0FF /* DTOverlayController-Info.plist */,
-				5B67537B81925318AD6FAE39484F4DC9 /* DTOverlayController-prefix.pch */,
-				D1B6AE64546D6653867557013F4DC27B /* DTOverlayController-umbrella.h */,
-				213E66BFAE28375D5DBBC0C974CD31A5 /* DTOverlayController.debug.xcconfig */,
-				8CEC7200F08130E49DA622087EB1DA43 /* DTOverlayController.release.xcconfig */,
+				C54F13257C724549344DAA55B857B5AD /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5CCC4A8C5757AE0EBEFF2EA3EFC5D2C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F70385C9ED9B1E79114A4E60CC8198E4 /* DTOverlayController */,
+				7C6BC2CF14E35CBE498A35FB5CB707C4 /* DZNEmptyDataSet */,
+				9302973E55265EF6AC14EB219EBDAADD /* OneSignal */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C6BC2CF14E35CBE498A35FB5CB707C4 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				874640C2D7CC1F6295433116CEB51BE3 /* UIScrollView+EmptyDataSet.h */,
+				9BC05B04BC9DDCE18A0CFE2AA29ECF68 /* UIScrollView+EmptyDataSet.m */,
+				37AEE28EE07FCD47740E193512D80AFC /* Support Files */,
+			);
+			name = DZNEmptyDataSet;
+			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		888349B761BCE0A6D63D5DC0E61E4F9A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD40492D7012B9189A1CA2ED42E595 /* DTOverlayController.modulemap */,
+				11FF42DE43A5CA55C3FDD80DE2212A72 /* DTOverlayController-dummy.m */,
+				00786B41AA02406520846A32079D6632 /* DTOverlayController-Info.plist */,
+				556A81B06A0674469FB6300B0CAE3740 /* DTOverlayController-prefix.pch */,
+				D1ECA31F4A3FD1000E905927F913E6CB /* DTOverlayController-umbrella.h */,
+				A37116CD7BD7D9BCC61C95B8FC09C77D /* DTOverlayController.debug.xcconfig */,
+				32B3DA64CE42C0FA87585985F283F826 /* DTOverlayController.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DTOverlayController";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		9302973E55265EF6AC14EB219EBDAADD /* OneSignal */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				4EE261A8FFCDEE62C0131B604760D866 /* Frameworks */,
+				0369D5F9D5D8085D37856D48964D6872 /* Support Files */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6360D77BAEFC333274EA4D12A8ED50FC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D41FBA5D6E5374FDD3F25FA09CA4330A /* DTOverlayController */,
-				B57D05A264885E69C91B245817DB8CD7 /* Pods-TIFT */,
-				8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */,
-				435B8F875BE52896A6A184E68FBE92AB /* Pods-TIFTTests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		774DE2AF4636B6049306DD495F39EB56 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DF5F90E7D388F1484020499F86BA06F3 /* DTOverlayController */,
-			);
-			name = Pods;
+			name = OneSignal;
+			path = OneSignal;
 			sourceTree = "<group>";
 		};
 		A15789FDDA107FDA9FD93D68B3C72A40 /* Pods-TIFT-TIFTUITests */ = {
@@ -213,33 +348,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				774DE2AF4636B6049306DD495F39EB56 /* Pods */,
-				6360D77BAEFC333274EA4D12A8ED50FC /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				5CCC4A8C5757AE0EBEFF2EA3EFC5D2C0 /* Pods */,
+				075086B997914B1B1285BB53E6261650 /* Products */,
 				FC8165D5B4B2FC19DC57D3C3FE8E4E15 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DF5F90E7D388F1484020499F86BA06F3 /* DTOverlayController */ = {
-			isa = PBXGroup;
-			children = (
-				7AF772A4AA7266AABD7EBE286D88375E /* DTOverlayController.swift */,
-				1D430A835867B73F7E30CC616AF7FED0 /* DTOverlayPresentationController.swift */,
-				DB8A9140078C50003495EF6C2C62B884 /* DTScrollViewRepresentable.swift */,
-				4D97A22F8BFD9CB6E81B41F2684F315B /* InteractiveTransition.swift */,
-				2EE9592F549E46F4BCC454335C894733 /* TransitioningAnimator.swift */,
-				47801BF3FDA9BE76B643561DF841B46D /* Support Files */,
-			);
-			name = DTOverlayController;
-			path = DTOverlayController;
 			sourceTree = "<group>";
 		};
 		F0AF19FEDCE9854BAA0A2267EFF0E029 /* Pods-TIFTTests */ = {
@@ -258,6 +371,20 @@
 			path = "Target Support Files/Pods-TIFTTests";
 			sourceTree = "<group>";
 		};
+		F70385C9ED9B1E79114A4E60CC8198E4 /* DTOverlayController */ = {
+			isa = PBXGroup;
+			children = (
+				D33F107EA963AF04B0791F6048D6E0B5 /* DTOverlayController.swift */,
+				327A9D1084CCFD840FCEC60200DB4689 /* DTOverlayPresentationController.swift */,
+				F97CE54D49D5EEA32EFBF388FA6E70C2 /* DTScrollViewRepresentable.swift */,
+				25B88B49372446B54AA00C5D55D08A7C /* InteractiveTransition.swift */,
+				7C7A4ECF043A325DD54324D220B65E81 /* TransitioningAnimator.swift */,
+				888349B761BCE0A6D63D5DC0E61E4F9A /* Support Files */,
+			);
+			name = DTOverlayController;
+			path = DTOverlayController;
+			sourceTree = "<group>";
+		};
 		FC8165D5B4B2FC19DC57D3C3FE8E4E15 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +398,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3999A0F3E0CF979998E7E7370E62265D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A233BB84EE377CD8179335D47B904060 /* Pods-TIFT-TIFTUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EA42F573B0E0AA8DCEEDEE77E430122 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E79BB81084D705ECC396AE8CD481558 /* Pods-TIFT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		819AA5F7504AB52197D11BA55EAFF5E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,19 +430,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D096568894130FFA864098B3638AD543 /* Headers */ = {
+		D06BA6C9F749FE4DEE5BE5FE450E10A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A78F69C3E35DF9C925D968E4F29BAB90 /* Pods-TIFT-TIFTUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB0F45361538076D837A99AF8921F68D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEA736CEA48B58783C15AAAC1B7149BC /* Pods-TIFT-umbrella.h in Headers */,
+				4BE0E5EAB11950A0758C73468640EEE0 /* DZNEmptyDataSet-umbrella.h in Headers */,
+				5AAF5F2DFBE445CBADB1ACAE5C9EE86B /* UIScrollView+EmptyDataSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,17 +462,19 @@
 		};
 		4B44A868BF564EE79986C06C01A3C1FF /* Pods-TIFT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67B52F1C63A51399B0A76CD7AD54425D /* Build configuration list for PBXNativeTarget "Pods-TIFT" */;
+			buildConfigurationList = A2D49C99F9467376C9D24669A333199F /* Build configuration list for PBXNativeTarget "Pods-TIFT" */;
 			buildPhases = (
-				DB0F45361538076D837A99AF8921F68D /* Headers */,
-				0894CE453EA89F53B39FBDFFCFF4C706 /* Sources */,
-				5640FFBF9F3B2404B3E8324332018CB8 /* Frameworks */,
-				3D66AFBA0FCD92027240EB848B6D498F /* Resources */,
+				3EA42F573B0E0AA8DCEEDEE77E430122 /* Headers */,
+				849ECECF283AD29443F410BFF0F05501 /* Sources */,
+				A6F66B4A1BA8A915E40DF15E1A2140DE /* Frameworks */,
+				E5E992C70712EAB279856C1DC2E552DB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CD83D3B0A6AA0A3172803CCC04A7D5D8 /* PBXTargetDependency */,
+				DB0CAA00E34BFF70DF31FC41444AC403 /* PBXTargetDependency */,
+				9835A9417A289CF4E825EC7887AE3CEF /* PBXTargetDependency */,
+				1B4B1209D7E1017838366C2AC3DDCDA9 /* PBXTargetDependency */,
 			);
 			name = "Pods-TIFT";
 			productName = Pods_TIFT;
@@ -345,21 +483,41 @@
 		};
 		E3741CE93A869213EB406FE3899117FF /* Pods-TIFT-TIFTUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B757EB501FE16641A6719B36D8F3A773 /* Build configuration list for PBXNativeTarget "Pods-TIFT-TIFTUITests" */;
+			buildConfigurationList = E6F580FC1D5F1C6E1D4297FEE262EFCC /* Build configuration list for PBXNativeTarget "Pods-TIFT-TIFTUITests" */;
 			buildPhases = (
-				D096568894130FFA864098B3638AD543 /* Headers */,
-				CE43777004C1E905C5926AC573CBF883 /* Sources */,
-				329E0381648185B395A3979C2FEE1021 /* Frameworks */,
-				07515A272BA13B1A480688000B9110D6 /* Resources */,
+				3999A0F3E0CF979998E7E7370E62265D /* Headers */,
+				83D4EFF7CBEA065C4048A8B89DD23DA9 /* Sources */,
+				86359E921934EC066051DF58FDBF285E /* Frameworks */,
+				53AEB94F55F7F8416C82464959CA1691 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B058A3F450D0524FF4C1CBA46F6DCFED /* PBXTargetDependency */,
+				98227A76399E078291D1D4851D91430C /* PBXTargetDependency */,
+				DD843876E2C08F12F8BE608C8E0588C4 /* PBXTargetDependency */,
+				6C6C328F807822F3A53FCC435B190C78 /* PBXTargetDependency */,
 			);
 			name = "Pods-TIFT-TIFTUITests";
 			productName = Pods_TIFT_TIFTUITests;
 			productReference = 8D1494ACA3BACADAE250F6B849FC9574 /* Pods-TIFT-TIFTUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C0B0B9350AD3B45C31553A10607F26 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
+			buildPhases = (
+				D06BA6C9F749FE4DEE5BE5FE450E10A5 /* Headers */,
+				56243939AE36D20168FC6B2F2BFDB725 /* Sources */,
+				ADC613EB65919EC2A824D24DF5E45EE1 /* Frameworks */,
+				0CF2858256F214275644663A167B964F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZNEmptyDataSet;
+			productName = DZNEmptyDataSet;
+			productReference = 5DA4577FE3BC4A03751108FFED07B385 /* DZNEmptyDataSet */;
 			productType = "com.apple.product-type.framework";
 		};
 		F5B2800557F9DCCBE4E6E62C36F39C11 /* Pods-TIFTTests */ = {
@@ -374,7 +532,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5AA56B35E5D4165321F0545883F293BA /* PBXTargetDependency */,
+				A2B7E818CD7FD05B48F009A54EA522EC /* PBXTargetDependency */,
 			);
 			name = "Pods-TIFTTests";
 			productName = Pods_TIFTTests;
@@ -399,11 +557,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6360D77BAEFC333274EA4D12A8ED50FC /* Products */;
+			productRefGroup = 075086B997914B1B1285BB53E6261650 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */,
+				F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */,
+				210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */,
 				4B44A868BF564EE79986C06C01A3C1FF /* Pods-TIFT */,
 				E3741CE93A869213EB406FE3899117FF /* Pods-TIFT-TIFTUITests */,
 				F5B2800557F9DCCBE4E6E62C36F39C11 /* Pods-TIFTTests */,
@@ -412,14 +572,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		07515A272BA13B1A480688000B9110D6 /* Resources */ = {
+		0CF2858256F214275644663A167B964F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D66AFBA0FCD92027240EB848B6D498F /* Resources */ = {
+		53AEB94F55F7F8416C82464959CA1691 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,6 +587,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BCB857808574F94DD336501AB768E67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E992C70712EAB279856C1DC2E552DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,11 +610,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0894CE453EA89F53B39FBDFFCFF4C706 /* Sources */ = {
+		56243939AE36D20168FC6B2F2BFDB725 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF55DE033583735A7EB8A0EE23B66A5F /* Pods-TIFT-dummy.m in Sources */,
+				0F313CE5B14382A85BBC06490BC0B1D2 /* DZNEmptyDataSet-dummy.m in Sources */,
+				6D41BE5D2404F74DCD82B29AE9ECAFBD /* UIScrollView+EmptyDataSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D4EFF7CBEA065C4048A8B89DD23DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE7B6D28CE5AD2123982B5A7FA2912C /* Pods-TIFT-TIFTUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849ECECF283AD29443F410BFF0F05501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE51A74D664B2E35AACD38993E5E73CB /* Pods-TIFT-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,14 +640,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73106A8A6C394C98D9D3BA97F0AF4668 /* Pods-TIFTTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE43777004C1E905C5926AC573CBF883 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				729E08173C218B66356C9799F8712A5C /* Pods-TIFT-TIFTUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,27 +659,89 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5AA56B35E5D4165321F0545883F293BA /* PBXTargetDependency */ = {
+		1B4B1209D7E1017838366C2AC3DDCDA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignal;
+			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
+			targetProxy = 49A5A93C5350AFF01D6278CE58C7B686 /* PBXContainerItemProxy */;
+		};
+		6C6C328F807822F3A53FCC435B190C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignal;
+			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
+			targetProxy = 735F5ABA4A78D6272D5AF27AE1E1CA4E /* PBXContainerItemProxy */;
+		};
+		98227A76399E078291D1D4851D91430C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DTOverlayController;
+			target = 0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */;
+			targetProxy = 1B7706F3C1694007EE3CB56E608CD56D /* PBXContainerItemProxy */;
+		};
+		9835A9417A289CF4E825EC7887AE3CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNEmptyDataSet;
+			target = F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */;
+			targetProxy = 72B26DE0E36EB99CE24F27913E0F9D50 /* PBXContainerItemProxy */;
+		};
+		A2B7E818CD7FD05B48F009A54EA522EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TIFT";
 			target = 4B44A868BF564EE79986C06C01A3C1FF /* Pods-TIFT */;
-			targetProxy = 5D0C8227D2849B2966493B73609E9243 /* PBXContainerItemProxy */;
+			targetProxy = 54C490349B95FCF66CE565C86BC389E9 /* PBXContainerItemProxy */;
 		};
-		B058A3F450D0524FF4C1CBA46F6DCFED /* PBXTargetDependency */ = {
+		DB0CAA00E34BFF70DF31FC41444AC403 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DTOverlayController;
 			target = 0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */;
-			targetProxy = 6199C9AB9E978AD11284142311D74B20 /* PBXContainerItemProxy */;
+			targetProxy = 1DA53ADD9CFA77FD83C5DE2BFB8DF640 /* PBXContainerItemProxy */;
 		};
-		CD83D3B0A6AA0A3172803CCC04A7D5D8 /* PBXTargetDependency */ = {
+		DD843876E2C08F12F8BE608C8E0588C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DTOverlayController;
-			target = 0A54C567BAF7759AC205CB50EDD7DA1E /* DTOverlayController */;
-			targetProxy = 8122DDC0FE56B13122AEB5BE633E8817 /* PBXContainerItemProxy */;
+			name = DZNEmptyDataSet;
+			target = F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */;
+			targetProxy = 83378782C727AE7A97F394373C1699BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		032578F13B545988717A85E0271D79C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BB4BB4514E106600E010903D7E85AA /* Pods-TIFT.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1124F5B227C7CC98F0E8354A4FC1D76E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD270542D06B9426D08912964CE6E085 /* Pods-TIFTTests.release.xcconfig */;
@@ -544,7 +782,7 @@
 		};
 		26EC50ADD88602363C489973F6AB93EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 213E66BFAE28375D5DBBC0C974CD31A5 /* DTOverlayController.debug.xcconfig */;
+			baseConfigurationReference = A37116CD7BD7D9BCC61C95B8FC09C77D /* DTOverlayController.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -576,43 +814,21 @@
 			};
 			name = Debug;
 		};
-		325292AC34AF381045CF7E16961CF984 /* Release */ = {
+		39EEA60EBE149E7560D3853E979A37C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03B8F2712452C27C0B6BB8C89D1F3154 /* Pods-TIFT-TIFTUITests.release.xcconfig */;
+			baseConfigurationReference = 4161E3323434D9A8351598F32B7B71B2 /* OneSignal.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -680,12 +896,10 @@
 			};
 			name = Debug;
 		};
-		555337EE22DF48CC7F08A04C9E604233 /* Release */ = {
+		5F5B11661BD88F73D95147C00DED01D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84BB4BB4514E106600E010903D7E85AA /* Pods-TIFT.release.xcconfig */;
+			baseConfigurationReference = 09F9A9977845B58508359BB0F5E13ACA /* DZNEmptyDataSet.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -694,23 +908,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TIFT/Pods-TIFT.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				PRODUCT_MODULE_NAME = DZNEmptyDataSet;
+				PRODUCT_NAME = DZNEmptyDataSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -780,6 +993,81 @@
 			};
 			name = Release;
 		};
+		8FA6562D004299FA70EFFB9AED7CEB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D117372DE890264EE5C022FB0854C3ED /* Pods-TIFT-TIFTUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C78066A662E80DC8F0DA4D25BC4BB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B8F2712452C27C0B6BB8C89D1F3154 /* Pods-TIFT-TIFTUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B5FBE6D5598BDE453BAA15B989EBF580 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07A7DE3F2AD68BAB80EB83D9E4FD9090 /* Pods-TIFTTests.debug.xcconfig */;
@@ -817,7 +1105,7 @@
 			};
 			name = Debug;
 		};
-		CD93386E5C183C65C63A0EE888FE3544 /* Debug */ = {
+		B6A6C51AA17EEA0229E764FBA6912A7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3449648521ED326922E20B4D79A6638E /* Pods-TIFT.debug.xcconfig */;
 			buildSettings = {
@@ -854,9 +1142,43 @@
 			};
 			name = Debug;
 		};
+		DCB8EFDD89381FFF4F2B3BE791C63C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F2A0BE3D14B56EF8A5CB17DBBC50B3 /* DZNEmptyDataSet.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				PRODUCT_MODULE_NAME = DZNEmptyDataSet;
+				PRODUCT_NAME = DZNEmptyDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F27248C66A86893BB7A9E1D174BEBBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CEC7200F08130E49DA622087EB1DA43 /* DTOverlayController.release.xcconfig */;
+			baseConfigurationReference = 32B3DA64CE42C0FA87585985F283F826 /* DTOverlayController.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -889,46 +1211,35 @@
 			};
 			name = Release;
 		};
-		FEDE69E13065A12F71E0A96748CBB84A /* Debug */ = {
+		F5C74AE35C47983A357B223172603025 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D117372DE890264EE5C022FB0854C3ED /* Pods-TIFT-TIFTUITests.debug.xcconfig */;
+			baseConfigurationReference = 682A12A3AF5AB5CE556F408E70FBEBC5 /* OneSignal.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TIFT-TIFTUITests/Pods-TIFT-TIFTUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09A5A4D585F2B2C7D977A4F1E5213117 /* Build configuration list for PBXAggregateTarget "OneSignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EEA60EBE149E7560D3853E979A37C2 /* Debug */,
+				F5C74AE35C47983A357B223172603025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0DAC7A1918DAC7F8BB4A4C9B559CC0D2 /* Build configuration list for PBXNativeTarget "DTOverlayController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -947,20 +1258,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67B52F1C63A51399B0A76CD7AD54425D /* Build configuration list for PBXNativeTarget "Pods-TIFT" */ = {
+		A2D49C99F9467376C9D24669A333199F /* Build configuration list for PBXNativeTarget "Pods-TIFT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD93386E5C183C65C63A0EE888FE3544 /* Debug */,
-				555337EE22DF48CC7F08A04C9E604233 /* Release */,
+				B6A6C51AA17EEA0229E764FBA6912A7E /* Debug */,
+				032578F13B545988717A85E0271D79C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B757EB501FE16641A6719B36D8F3A773 /* Build configuration list for PBXNativeTarget "Pods-TIFT-TIFTUITests" */ = {
+		A6C0B0B9350AD3B45C31553A10607F26 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEDE69E13065A12F71E0A96748CBB84A /* Debug */,
-				325292AC34AF381045CF7E16961CF984 /* Release */,
+				DCB8EFDD89381FFF4F2B3BE791C63C99 /* Debug */,
+				5F5B11661BD88F73D95147C00DED01D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -970,6 +1281,15 @@
 			buildConfigurations = (
 				B5FBE6D5598BDE453BAA15B989EBF580 /* Debug */,
 				1124F5B227C7CC98F0E8354A4FC1D76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F580FC1D5F1C6E1D4297FEE262EFCC /* Build configuration list for PBXNativeTarget "Pods-TIFT-TIFTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA6562D004299FA70EFFB9AED7CEB2C /* Debug */,
+				9C78066A662E80DC8F0DA4D25BC4BB5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

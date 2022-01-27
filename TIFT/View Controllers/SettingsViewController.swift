@@ -24,7 +24,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                     .review,
                     .share,
                     .contact,
-                    .widget,
                     .privacy]
         
         let settingsTableViewCell = UINib(nibName: "SettingsTableViewCell", bundle: nil)
@@ -40,7 +39,9 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as? SettingsTableViewCell
         let section = sections[indexPath.row]
         cell?.titleLabel.text = title(_forSection: section)
-        cell?.iconImageView.image = UIImage(named: section.rawValue)
+        DispatchQueue.main.async {
+            cell?.iconImageView.image = UIImage(named: section.rawValue)
+        }
         return cell!
     }
     

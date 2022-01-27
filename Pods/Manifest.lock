@@ -1,16 +1,24 @@
 PODS:
   - DTOverlayController (1.0.2)
+  - DZNEmptyDataSet (1.8.1)
+  - OneSignal (3.10.0)
 
 DEPENDENCIES:
   - DTOverlayController
+  - DZNEmptyDataSet
+  - OneSignal
 
 SPEC REPOS:
   trunk:
     - DTOverlayController
+    - DZNEmptyDataSet
+    - OneSignal
 
 SPEC CHECKSUMS:
   DTOverlayController: 7bd26660a6152efabea36f9342182c038d80852e
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  OneSignal: 198da4de73fb7bd6e45bc04221a7f16efca057ad
 
-PODFILE CHECKSUM: c2497b64ff62a84cae7c0b654e44ba2af0b6167d
+PODFILE CHECKSUM: c14f1f99e7b67ab32b4827683988685c85b5909b
 
 COCOAPODS: 1.11.2

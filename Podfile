@@ -7,6 +7,8 @@ target 'TIFT' do
 
   # Pods for TIFT
 pod 'DTOverlayController' 
+pod 'DZNEmptyDataSet'
+pod 'OneSignal'
 
   target 'TIFTTests' do
     inherit! :search_paths

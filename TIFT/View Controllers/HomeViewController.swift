@@ -7,8 +7,10 @@
 
 import UIKit
 import DTOverlayController
+import DZNEmptyDataSet
+import OneSignal
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     @IBOutlet weak var table: UITableView!
     
@@ -22,6 +24,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         fetchQuotes()
         setupUI()
         setupData()
+        registerNotifications()
+    }
+    
+    // MARK: - Notifications
+    func registerNotifications() {
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            if accepted {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,6 +57,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         refresh.attributedTitle = NSAttributedString(string: "")
         refresh.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         table.refreshControl = refresh
+        
+        setUpEmptyState()
     }
     
     func setupData() {
@@ -189,6 +203,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             return categoriesCell!
         }
+    }
+    
+    //MARK: - DZNEmptyDataSet
+    func setUpEmptyState() {
+        self.table.emptyDataSetSource = self
+        self.table.emptyDataSetDelegate = self
+    }
+    
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "")
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let text = "Hold tight while we get groovy with our server."
+        let attributes = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16),
+                     NSAttributedString.Key.foregroundColor: UIColor.lightText]
+        
+        return NSAttributedString(string: text, attributes: attributes)
     }
 
 }

@@ -14,6 +14,7 @@
 		3C65DF5827A1BDCF00F67FEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF5727A1BDCF00F67FEF /* SettingsViewController.swift */; };
 		3C65DF5B27A1BF9800F67FEF /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF5927A1BF9800F67FEF /* SettingsTableViewCell.swift */; };
 		3C65DF5C27A1BF9800F67FEF /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C65DF5A27A1BF9800F67FEF /* SettingsTableViewCell.xib */; };
+		3C65DF5E27A26A7F00F67FEF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF5D27A26A7F00F67FEF /* Main.swift */; };
 		3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */; };
 		3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */; };
 		3CA4841427A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */; };
@@ -80,6 +81,8 @@
 		3C65DF5727A1BDCF00F67FEF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3C65DF5927A1BF9800F67FEF /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		3C65DF5A27A1BF9800F67FEF /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		3C65DF5D27A26A7F00F67FEF /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		3C65DF5F27A30ED100F67FEF /* TIFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TIFT.entitlements; sourceTree = "<group>"; };
 		3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDrawerViewController.swift; sourceTree = "<group>"; };
 		3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareOptionCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -200,6 +203,7 @@
 		6D30D27027853E0F00A2FD84 /* TIFT */ = {
 			isa = PBXGroup;
 			children = (
+				3C65DF5F27A30ED100F67FEF /* TIFT.entitlements */,
 				6D30D27127853E0F00A2FD84 /* AppDelegate.swift */,
 				6D30D27327853E0F00A2FD84 /* SceneDelegate.swift */,
 				6D30D27727853E0F00A2FD84 /* Main.storyboard */,
@@ -252,6 +256,7 @@
 				6D30D2A62785400B00A2FD84 /* Quote.swift */,
 				6D30D2A8278545C800A2FD84 /* Collection.swift */,
 				6D30D2AA278545EC00A2FD84 /* Category.swift */,
+				3C65DF5D27A26A7F00F67FEF /* Main.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				6D30D27627853E0F00A2FD84 /* QuoteViewController.swift in Sources */,
 				6D833B882786978300D31F4C /* HomeViewController.swift in Sources */,
 				3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */,
+				3C65DF5E27A26A7F00F67FEF /* Main.swift in Sources */,
 				6D30D2A9278545C800A2FD84 /* Collection.swift in Sources */,
 				3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */,
 				3C1488CA279CFD9000D1022B /* ThemeCollectionViewCell.swift in Sources */,
@@ -758,6 +764,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TIFT/TIFT.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -792,6 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TIFT/TIFT.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
