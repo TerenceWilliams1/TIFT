@@ -15,6 +15,10 @@
 		3C65DF5B27A1BF9800F67FEF /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF5927A1BF9800F67FEF /* SettingsTableViewCell.swift */; };
 		3C65DF5C27A1BF9800F67FEF /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C65DF5A27A1BF9800F67FEF /* SettingsTableViewCell.xib */; };
 		3C65DF5E27A26A7F00F67FEF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF5D27A26A7F00F67FEF /* Main.swift */; };
+		3C65DF6227A317AE00F67FEF /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF6127A317AE00F67FEF /* WalkThroughViewController.swift */; };
+		3C65DF6427A317E200F67FEF /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF6327A317E200F67FEF /* Page1ViewController.swift */; };
+		3C65DF6627A317EB00F67FEF /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF6527A317EB00F67FEF /* Page2ViewController.swift */; };
+		3C65DF6827A373DF00F67FEF /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65DF6727A373DF00F67FEF /* Page3ViewController.swift */; };
 		3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */; };
 		3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */; };
 		3CA4841427A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */; };
@@ -83,6 +87,10 @@
 		3C65DF5A27A1BF9800F67FEF /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		3C65DF5D27A26A7F00F67FEF /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		3C65DF5F27A30ED100F67FEF /* TIFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TIFT.entitlements; sourceTree = "<group>"; };
+		3C65DF6127A317AE00F67FEF /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		3C65DF6327A317E200F67FEF /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		3C65DF6527A317EB00F67FEF /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		3C65DF6727A373DF00F67FEF /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDrawerViewController.swift; sourceTree = "<group>"; };
 		3CA4841127A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CA4841227A0B7EB00A15BAA /* ShareOptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareOptionCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -178,6 +186,17 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		3C65DF6027A3174B00F67FEF /* Walk Through View */ = {
+			isa = PBXGroup;
+			children = (
+				3C65DF6127A317AE00F67FEF /* WalkThroughViewController.swift */,
+				3C65DF6327A317E200F67FEF /* Page1ViewController.swift */,
+				3C65DF6527A317EB00F67FEF /* Page2ViewController.swift */,
+				3C65DF6727A373DF00F67FEF /* Page3ViewController.swift */,
+			);
+			name = "Walk Through View";
+			sourceTree = "<group>";
+		};
 		6D30D26527853E0F00A2FD84 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +263,7 @@
 				3C1488C6279CF0B600D1022B /* ThemeViewController.swift */,
 				3CA4840D279FAB6600A15BAA /* ShareDrawerViewController.swift */,
 				3C65DF5727A1BDCF00F67FEF /* SettingsViewController.swift */,
+				3C65DF6027A3174B00F67FEF /* Walk Through View */,
 				6D833B8F2787FDE400D31F4C /* Collection View Cells */,
 				6D833B892786A71E00D31F4C /* Table View Cells */,
 			);
@@ -566,14 +586,18 @@
 			files = (
 				6D72D311278E069500A3FFEF /* HeaderTableViewCell.swift in Sources */,
 				6D30D2A72785400B00A2FD84 /* Quote.swift in Sources */,
+				3C65DF6627A317EB00F67FEF /* Page2ViewController.swift in Sources */,
 				3C65DF5827A1BDCF00F67FEF /* SettingsViewController.swift in Sources */,
 				6D833B9A2788054300D31F4C /* HighlightedQuoteCollectionViewCell.swift in Sources */,
 				6D833BA6278A9B3A00D31F4C /* HighlightsTableViewCell.swift in Sources */,
 				6D30D27C27853E0F00A2FD84 /* TIFT.xcdatamodeld in Sources */,
+				3C65DF6427A317E200F67FEF /* Page1ViewController.swift in Sources */,
 				3C65DF5B27A1BF9800F67FEF /* SettingsTableViewCell.swift in Sources */,
 				6D30D27627853E0F00A2FD84 /* QuoteViewController.swift in Sources */,
 				6D833B882786978300D31F4C /* HomeViewController.swift in Sources */,
+				3C65DF6227A317AE00F67FEF /* WalkThroughViewController.swift in Sources */,
 				3CA4840F279FAB6600A15BAA /* ShareDrawerViewController.swift in Sources */,
+				3C65DF6827A373DF00F67FEF /* Page3ViewController.swift in Sources */,
 				3C65DF5E27A26A7F00F67FEF /* Main.swift in Sources */,
 				6D30D2A9278545C800A2FD84 /* Collection.swift in Sources */,
 				3CA4841327A0B7EB00A15BAA /* ShareOptionCollectionViewCell.swift in Sources */,

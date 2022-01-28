@@ -8,7 +8,6 @@
 import UIKit
 import DTOverlayController
 import DZNEmptyDataSet
-import OneSignal
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
@@ -21,19 +20,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         fetchQuotes()
         setupUI()
         setupData()
-        registerNotifications()
-    }
-    
-    // MARK: - Notifications
-    func registerNotifications() {
-        OneSignal.promptForPushNotifications(userResponse: { accepted in
-            if accepted {
-                UIApplication.shared.registerForRemoteNotifications()
-            }
-        })
+        showWalkThrough()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,8 +100,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             print(data)
             }.resume()
     }
-    
+        
     //MARK: - Actions
+    func showWalkThrough() {
+//        if GlobalHelper.hasSeenIntro() { return }
+        let walkthrough = WalkThroughPageViewController(coder: nil)
+        walkthrough!.modalPresentationStyle = .fullScreen
+        walkthrough?.modalTransitionStyle = .crossDissolve
+        self.present(walkthrough!, animated: true, completion: nil)
+    }
+    
     @objc func refresh(_ sender: AnyObject) {
         self.refresh.beginRefreshing()
         let generator = UIImpactFeedbackGenerator(style: .light)
