@@ -12,12 +12,31 @@ import OneSignal
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("df2227b6-c36e-472f-8377-3508c00ca803")
+        
+//        let notificationOpenedBlock: OSHandleNotificationActionBlock = { result in
+//            // This block gets called when the user reacts to a notification received
+//            if let additionalData = result!.notification.payload!.additionalData {
+//                print("additionalData: ", additionalData)
+//                print(additionalData["postId"] as! String)
+//
+//                if let postId = additionalData["postId"] as? String {
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    if  let postDetailVC = storyboard.instantiateViewController(withIdentifier: "PostDetailViewController") as? PostDetailViewController,
+//                        let tabBarController = self.window?.rootViewController as? UITabBarController,
+//                        let navController = tabBarController.selectedViewController as? UINavigationController {
+//                            let dataModel = PostDataModel()
+//                            dataModel.postId = postId
+//                            postDetailVC.dataModel = dataModel
+//                            navController.popViewController(animated: false)
+//                            navController.pushViewController(postDetailVC, animated: true)
+//                    }
+//                }
+//            }
+//        }
         
         return true
     }
@@ -39,26 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentCloudKitContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
         let container = NSPersistentCloudKitContainer(name: "TIFT")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
@@ -73,8 +75,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try context.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }

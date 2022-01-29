@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var table: UITableView!
     
     var quotes: [Quote] = []
+    var allQuotes: [String] = []
     var collection: Collection!
     var sections: [HomeSections] = []
     private let refresh = UIRefreshControl()
@@ -87,6 +88,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 let collectionData = try decoder.decode(Collection.self, from: data)
                 self.collection = collectionData
                 DispatchQueue.main.async {
+                    self.saveCollectionData(collection: self.collection)
                     print("\n\n***Successfully loaded quotes***\n\n")
                     self.table.reloadData()
                     self.refresh.endRefreshing()
@@ -102,6 +104,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
         
     //MARK: - Actions
+    func saveCollectionData(collection: Collection) {
+        allQuotes.removeAll()
+        for highlight in collection.highlights {
+            let newQuote = "\(highlight.quote)\n\n\(highlight.author))"
+            self.allQuotes.append(newQuote)
+        }
+        
+        for category in collection.categories {
+            for quote in category.quotes {
+                let newQuote = "\(quote.quote)\n\n\(quote.author))"
+                self.allQuotes.append(newQuote)
+            }
+        }
+        
+        UserDefaults.standard.setValue(self.allQuotes, forKey: "allQuotes")
+        UserDefaults.standard.synchronize()
+    }
+    
+    func setupQuoteReminders() {
+        let randomIndex = Int(arc4random_uniform(UInt32(self.allQuotes.count)) + 1)
+        let quote = allQuotes[randomIndex]
+        
+        
+    }
+    
     func showWalkThrough() {
 //        if GlobalHelper.hasSeenIntro() { return }
         let walkthrough = WalkThroughPageViewController(coder: nil)
@@ -220,6 +247,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                      NSAttributedString.Key.foregroundColor: UIColor.lightText]
         
         return NSAttributedString(string: text, attributes: attributes)
+    }
+    
+    //MARK: - User Notifications
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound, .badge])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+
+        let notificationID = response.notification.request.identifier
+        if notificationID == "inAppMessage" { return }
     }
 
 }

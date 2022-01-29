@@ -21,7 +21,6 @@ class Page2ViewController: UIViewController {
     
     @objc func closeWalkthrough() {
         let current = UNUserNotificationCenter.current()
-
         current.getNotificationSettings(completionHandler: { (settings) in
             switch settings.authorizationStatus {
             case .notDetermined:

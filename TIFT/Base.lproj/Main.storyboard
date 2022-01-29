@@ -226,7 +226,7 @@
                                 <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="20" maxX="10" maxY="0.0"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rqF-b5-ofu">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="rqF-b5-ofu">
                                     <size key="itemSize" width="115" height="115"/>
                                     <size key="estimatedItemSize" width="115" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -450,21 +450,18 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditate" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-PQ-6Dc">
-                                <rect key="frame" x="0.0" y="403" width="414" height="264"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="mdx-2V-Hvn"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sharing thoughts and ideas that aspire to bring peace and inspiration" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-R7-TX1">
-                                <rect key="frame" x="95" y="199" width="224" height="196"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="qCy-m1-lpn"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sharing thoughts and ideas that aspire to bring peace and inspiration" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-R7-TX1">
+                                <rect key="frame" x="95" y="165" width="224" height="108"/>
                                 <fontDescription key="fontDescription" name="Viga-Regular" family="Viga" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditate" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-PQ-6Dc">
+                                <rect key="frame" x="0.0" y="316" width="414" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="317" id="B67-df-FrT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SaZ-CY-4Mt"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -472,14 +469,18 @@
                             <constraint firstItem="SaZ-CY-4Mt" firstAttribute="trailing" secondItem="vmp-ek-G8d" secondAttribute="trailing" constant="95" id="3CR-EO-Fri"/>
                             <constraint firstItem="GFp-R7-TX1" firstAttribute="leading" secondItem="SaZ-CY-4Mt" secondAttribute="leading" constant="95" id="5Ts-76-WeD"/>
                             <constraint firstItem="DrQ-J7-mYG" firstAttribute="top" secondItem="SaZ-CY-4Mt" secondAttribute="top" constant="45" id="7D9-vc-KQh"/>
-                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="top" secondItem="GFp-R7-TX1" secondAttribute="bottom" constant="8" id="LFG-ab-NAs"/>
                             <constraint firstItem="SaZ-CY-4Mt" firstAttribute="bottom" secondItem="vmp-ek-G8d" secondAttribute="bottom" constant="50" id="MB5-yp-Jpb"/>
-                            <constraint firstItem="vmp-ek-G8d" firstAttribute="top" secondItem="QK3-PQ-6Dc" secondAttribute="bottom" constant="95" id="ZYs-mG-Cw3"/>
+                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="trailing" secondItem="SaZ-CY-4Mt" secondAttribute="trailing" id="U39-iA-jaH"/>
+                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="centerY" secondItem="FBS-6w-Cs9" secondAttribute="centerY" constant="26.5" id="USB-MS-EB1"/>
+                            <constraint firstItem="GFp-R7-TX1" firstAttribute="leading" secondItem="SaZ-CY-4Mt" secondAttribute="leading" constant="95" id="Wec-d9-GE4"/>
+                            <constraint firstItem="SaZ-CY-4Mt" firstAttribute="trailing" secondItem="GFp-R7-TX1" secondAttribute="trailing" constant="95" id="Y0O-R0-jcC"/>
                             <constraint firstItem="DrQ-J7-mYG" firstAttribute="leading" secondItem="SaZ-CY-4Mt" secondAttribute="leading" constant="35" id="ai7-a8-T8E"/>
+                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="top" secondItem="GFp-R7-TX1" secondAttribute="bottom" constant="43" id="ax8-UT-55j"/>
                             <constraint firstItem="vmp-ek-G8d" firstAttribute="leading" secondItem="SaZ-CY-4Mt" secondAttribute="leading" constant="95" id="doA-RM-mke"/>
-                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="leading" secondItem="SaZ-CY-4Mt" secondAttribute="leading" id="fuO-BM-xbf"/>
-                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="trailing" secondItem="SaZ-CY-4Mt" secondAttribute="trailing" id="kdi-3P-BDU"/>
+                            <constraint firstItem="vmp-ek-G8d" firstAttribute="top" secondItem="QK3-PQ-6Dc" secondAttribute="bottom" constant="129" id="fLg-wW-BOY"/>
+                            <constraint firstItem="GFp-R7-TX1" firstAttribute="top" secondItem="DrQ-J7-mYG" secondAttribute="bottom" constant="44" id="l24-VV-raz"/>
                             <constraint firstItem="SaZ-CY-4Mt" firstAttribute="trailing" secondItem="GFp-R7-TX1" secondAttribute="trailing" constant="95" id="rrU-gP-sl2"/>
+                            <constraint firstItem="QK3-PQ-6Dc" firstAttribute="leading" secondItem="SaZ-CY-4Mt" secondAttribute="leading" id="v3g-Ou-bqD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -512,7 +513,7 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambition" translatesAutoresizingMaskIntoConstraints="NO" id="gdS-NU-zaY">
-                                <rect key="frame" x="0.0" y="268" width="414" height="197"/>
+                                <rect key="frame" x="0.0" y="209" width="414" height="197"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="197" id="GRD-Yu-J4J"/>
                                 </constraints>
@@ -526,11 +527,8 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="ye3-Pm-d4O"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Having the right mindset throughout the day is key to reaching your fullest potentials." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-R1-9cc">
-                                <rect key="frame" x="95" y="509" width="224" height="196"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="Z2d-gi-kXC"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Having the right mindset throughout the day is key to reaching your fullest potentials." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-R1-9cc">
+                                <rect key="frame" x="95" y="414" width="224" height="298"/>
                                 <fontDescription key="fontDescription" name="Viga-Regular" family="Viga" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -541,16 +539,16 @@
                         <constraints>
                             <constraint firstItem="hig-4E-gg5" firstAttribute="top" secondItem="dLL-LH-ZOn" secondAttribute="top" constant="45" id="3EB-54-0sf"/>
                             <constraint firstItem="hig-4E-gg5" firstAttribute="leading" secondItem="dLL-LH-ZOn" secondAttribute="leading" constant="35" id="59x-HE-vc6"/>
+                            <constraint firstItem="egR-MY-uc3" firstAttribute="top" secondItem="h6U-R1-9cc" secondAttribute="bottom" constant="50" id="5be-HU-6AF"/>
+                            <constraint firstItem="h6U-R1-9cc" firstAttribute="top" secondItem="gdS-NU-zaY" secondAttribute="bottom" constant="8" id="77H-NM-WSf"/>
                             <constraint firstItem="gdS-NU-zaY" firstAttribute="trailing" secondItem="dLL-LH-ZOn" secondAttribute="trailing" id="AQT-9P-iV8"/>
-                            <constraint firstItem="h6U-R1-9cc" firstAttribute="leading" secondItem="dLL-LH-ZOn" secondAttribute="leading" constant="95" id="C7v-pj-ZS8"/>
                             <constraint firstItem="dLL-LH-ZOn" firstAttribute="bottom" secondItem="egR-MY-uc3" secondAttribute="bottom" constant="50" id="Iqz-n2-MPb"/>
-                            <constraint firstItem="egR-MY-uc3" firstAttribute="top" secondItem="h6U-R1-9cc" secondAttribute="bottom" constant="57" id="UnW-Dl-vuU"/>
                             <constraint firstItem="egR-MY-uc3" firstAttribute="leading" secondItem="dLL-LH-ZOn" secondAttribute="leading" constant="95" id="Uzo-nK-zQo"/>
-                            <constraint firstItem="gdS-NU-zaY" firstAttribute="top" secondItem="hig-4E-gg5" secondAttribute="bottom" constant="147" id="W0U-Fr-J5Y"/>
+                            <constraint firstItem="gdS-NU-zaY" firstAttribute="top" secondItem="hig-4E-gg5" secondAttribute="bottom" constant="88" id="W0U-Fr-J5Y"/>
+                            <constraint firstItem="dLL-LH-ZOn" firstAttribute="trailing" secondItem="h6U-R1-9cc" secondAttribute="trailing" constant="95" id="czn-37-XbT"/>
                             <constraint firstItem="dLL-LH-ZOn" firstAttribute="trailing" secondItem="egR-MY-uc3" secondAttribute="trailing" constant="95" id="jTg-Bf-fX2"/>
-                            <constraint firstItem="h6U-R1-9cc" firstAttribute="top" secondItem="gdS-NU-zaY" secondAttribute="bottom" constant="44" id="nq7-Ty-1h3"/>
                             <constraint firstItem="gdS-NU-zaY" firstAttribute="leading" secondItem="dLL-LH-ZOn" secondAttribute="leading" id="opT-fx-vLT"/>
-                            <constraint firstItem="dLL-LH-ZOn" firstAttribute="trailing" secondItem="h6U-R1-9cc" secondAttribute="trailing" constant="95" id="vY1-8m-Sk2"/>
+                            <constraint firstItem="h6U-R1-9cc" firstAttribute="leading" secondItem="dLL-LH-ZOn" secondAttribute="leading" constant="95" id="rFS-dw-Oxv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -559,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F68-RN-eXo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="1495.9821428571429"/>
+            <point key="canvasLocation" x="1298.5507246376812" y="1495.9821428571429"/>
         </scene>
         <!--Page3 View Controller-->
         <scene sceneID="QsZ-df-OrC">
@@ -596,7 +594,7 @@
                                     <constraint firstAttribute="height" constant="32" id="zb2-ae-c5h"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take It From Terence" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqx-m5-dJG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take It From Terence" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="Sqx-m5-dJG">
                                 <rect key="frame" x="69" y="362" width="276" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Viga-Regular" family="Viga" pointSize="37"/>
