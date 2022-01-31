@@ -9,7 +9,7 @@ import UIKit
 import DTOverlayController
 import DZNEmptyDataSet
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UNUserNotificationCenterDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     @IBOutlet weak var table: UITableView!
     
@@ -25,8 +25,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         fetchQuotes()
         setupUI()
         setupData()
-        showWalkThrough()
-    }
+        
+        if TIFTHelper.launchCount() < 2 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                self.showWalkThrough()
+            }
+        }    }
     
     override func viewDidAppear(_ animated: Bool) {
         fetchQuotes()
@@ -99,7 +103,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.refresh.endRefreshing()
                 print("Error Loading: ", err)
             }
-            print(data)
             }.resume()
     }
         
@@ -120,13 +123,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         UserDefaults.standard.setValue(self.allQuotes, forKey: "allQuotes")
         UserDefaults.standard.synchronize()
+//        self.setupQuoteReminders()
     }
     
     func setupQuoteReminders() {
         let randomIndex = Int(arc4random_uniform(UInt32(self.allQuotes.count)) + 1)
-        let quote = allQuotes[randomIndex]
+//        let quote = allQuotes[randomIndex]
         
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        content.title = "Daily Quote"
+        content.body = "Message" //allQuotes[randomIndex]
+        content.categoryIdentifier = "dailyQuote"
         
+        var dateComponents = DateComponents()
+        dateComponents.hour = 22
+        dateComponents.minute = 02
+        
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+                
+//        let request = UNNotificationRequest(identifier: "", content: content, trigger: trigger)
+//        center.add(request) { error in
+//          if error != nil {
+//            print("something went wrong")
+//          }
+//        }
     }
     
     func showWalkThrough() {
@@ -251,7 +272,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //MARK: - User Notifications
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert, .sound, .badge])
+        completionHandler([.sound, .badge, .banner])
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
@@ -259,7 +280,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let notificationID = response.notification.request.identifier
         if notificationID == "inAppMessage" { return }
     }
-
 }
 
 enum HomeSections: String {

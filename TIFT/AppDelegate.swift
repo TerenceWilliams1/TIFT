@@ -13,6 +13,8 @@ import OneSignal
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        sleep(3)
+        TIFTHelper.updateLaunchCount(count: TIFTHelper.launchCount() + 1)
         
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("df2227b6-c36e-472f-8377-3508c00ca803")
@@ -86,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: UNUserNotificationCenterDelegate {
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print(response.notification.request.content.userInfo)
+        print("Notification: \(response.notification.request.content.userInfo)")
         completionHandler()
     }
 

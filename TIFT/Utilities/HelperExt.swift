@@ -8,8 +8,15 @@
 import Foundation
 import UIKit
 
-class Helper {
+class TIFTHelper {
     
+    static func launchCount() -> Int {
+        return UserDefaults.standard.integer(forKey: "launchCount")
+    }
+    
+    static func updateLaunchCount(count: Int) {
+        UserDefaults.standard.set(count, forKey: "launchCount")
+    }
 }
 
 
