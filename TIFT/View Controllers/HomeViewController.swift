@@ -8,6 +8,7 @@
 import UIKit
 import DTOverlayController
 import DZNEmptyDataSet
+import StoreKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UNUserNotificationCenterDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
@@ -19,18 +20,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var sections: [HomeSections] = []
     private let refresh = UIRefreshControl()
 
+    override func viewWillAppear(_ animated: Bool) {
+        if TIFTHelper.launchCount() < 2 {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                self.showWalkThrough()
+            }
+        }
+        
+        //Ask For  Review
+        let currentCount = TIFTHelper.launchCount()
+        if (currentCount == 2 || currentCount == 6 || currentCount == 10 || currentCount == 20){
+            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fetchQuotes()
         setupUI()
         setupData()
-        
-        if TIFTHelper.launchCount() < 2 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                self.showWalkThrough()
-            }
-        }    }
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         fetchQuotes()
@@ -151,7 +162,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func showWalkThrough() {
-//        if GlobalHelper.hasSeenIntro() { return }
+        if TIFTHelper.hasSeenIntro() { return }
         let walkthrough = WalkThroughPageViewController(coder: nil)
         walkthrough!.modalPresentationStyle = .fullScreen
         walkthrough?.modalTransitionStyle = .crossDissolve

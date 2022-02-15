@@ -25,6 +25,8 @@ class Page3ViewController: UIViewController {
     }
     
     @objc func goToPage2() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "continueWalkthrough"),
         object: nil,
         userInfo: nil)

@@ -16,7 +16,7 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var quotes: [Quote] = []
     var index = Int()
-    var themeColor = UIColor()
+    var themeColor: UIColor = .white
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +56,9 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         NotificationCenter.default.addObserver(self, selector: #selector(self.readText(_fromNotification:)),
                                                name: NSNotification.Name(rawValue: "readText"),
                                                object: nil)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(scrollToNext))
+        table.addGestureRecognizer(tap)
     }
     
     //MARK: - Helpers
@@ -64,6 +67,13 @@ class QuoteViewController: UIViewController, UITableViewDelegate, UITableViewDat
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.table.scrollToRow(at: quoteIndexPath, at: UITableView.ScrollPosition.top, animated: true)
         }
+    }
+    
+    @objc func scrollToNext() {
+        let nextIndex = index + 1
+        if nextIndex >= quotes.count { return }
+        index = nextIndex
+        scrollToQuote(_atIndex: index)
     }
     
     //MARK: - Actions

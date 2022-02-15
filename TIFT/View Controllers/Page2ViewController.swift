@@ -20,6 +20,8 @@ class Page2ViewController: UIViewController {
     }
     
     @objc func closeWalkthrough() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         let current = UNUserNotificationCenter.current()
         current.getNotificationSettings(completionHandler: { (settings) in
             switch settings.authorizationStatus {
@@ -29,6 +31,7 @@ class Page2ViewController: UIViewController {
                     self.actionButton.setTitle("Continue →", for: .normal)
                 }
             default:
+                TIFTHelper.setHasSeenIntro()
                 DispatchQueue.main.async {
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "closeWalkthrough"),
                     object: nil,

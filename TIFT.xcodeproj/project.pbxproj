@@ -795,6 +795,7 @@
 				DEVELOPMENT_TEAM = FVSZK45BZJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TIFT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TIFT;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow TIFT to save quotes to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -807,7 +808,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = "terence-williams.TIFT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -830,6 +831,7 @@
 				DEVELOPMENT_TEAM = FVSZK45BZJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TIFT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TIFT;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow TIFT to save quotes to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -842,7 +844,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = "terence-williams.TIFT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

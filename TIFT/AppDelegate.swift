@@ -43,6 +43,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        if let aps = userInfo["aps"] as? NSDictionary {
+            if let alert = aps["alert"] as? NSDictionary {
+                let author = alert["title"] as? String ?? ""
+                let quote = alert["body"] as? String ?? ""
+                print("Author: \(author)\nQuote: \(quote)")
+                
+                let newQuote: Quote = Quote(quote: quote as String, author: author as String)
+                
+                let rootViewController = UIApplication.shared.keyWindow!.rootViewController as! UINavigationController
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let quoteViewController = storyBoard.instantiateViewController(withIdentifier: "QuoteViewController") as! QuoteViewController
+                quoteViewController.quotes = [newQuote]
+                rootViewController.pushViewController(quoteViewController, animated: true)
+                
+            } else if let quote = aps["alert"] as? NSString {
+                let newQuote: Quote = Quote(quote: quote as String, author: "")
+                
+                let rootViewController = UIApplication.shared.keyWindow!.rootViewController as! UINavigationController
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let quoteViewController = storyBoard.instantiateViewController(withIdentifier: "QuoteViewController") as! QuoteViewController
+                quoteViewController.quotes = [newQuote]
+                rootViewController.pushViewController(quoteViewController, animated: true)
+            }
+        }
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

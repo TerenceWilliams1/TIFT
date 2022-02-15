@@ -67,6 +67,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             self.openWebLink(url: "https://www.oaklandsoftwareco.com/contact")
             break
         case .review:
+            let url = URL.init(string: "https://apps.apple.com/us/app/tift-quotes-affirmations/id1606762872")
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
             break
         case .privacy:
             self.openWebLink(url: "https://www.oaklandsoftwareco.com/privacy")

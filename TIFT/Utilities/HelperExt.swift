@@ -10,12 +10,22 @@ import UIKit
 
 class TIFTHelper {
     
+    static let hasSeenIntroView = "hasSeenIntroView"
+    
     static func launchCount() -> Int {
         return UserDefaults.standard.integer(forKey: "launchCount")
     }
     
     static func updateLaunchCount(count: Int) {
         UserDefaults.standard.set(count, forKey: "launchCount")
+    }
+    
+    static func hasSeenIntro() -> Bool {
+        return UserDefaults.standard.bool(forKey: hasSeenIntroView)
+    }
+    
+    static func setHasSeenIntro() {
+        UserDefaults.standard.set(true, forKey: hasSeenIntroView)
     }
 }
 

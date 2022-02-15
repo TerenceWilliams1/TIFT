@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take It From Terence" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="kdq-fY-now">
-                                <rect key="frame" x="60" y="650" width="276" height="104"/>
+                                <rect key="frame" x="60" y="686" width="276" height="104"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="vd5-kl-ceE"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building mental strength" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="pOj-ov-MHd">
-                                <rect key="frame" x="60" y="754" width="344" height="37"/>
+                                <rect key="frame" x="60" y="790" width="344" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="K7w-tZ-bDT"/>
                                 </constraints>
@@ -59,7 +59,7 @@
                             <constraint firstItem="ubj-SC-UxT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="5oA-Dp-gjh"/>
                             <constraint firstItem="ubj-SC-UxT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Evz-ox-tsQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubj-SC-UxT" secondAttribute="bottom" constant="-34" id="Hzu-0u-XTF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pOj-ov-MHd" secondAttribute="bottom" constant="71" id="OA6-Bb-31J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pOj-ov-MHd" secondAttribute="bottom" constant="35" id="OA6-Bb-31J"/>
                             <constraint firstItem="pOj-ov-MHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="S0s-t2-bhX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ubj-SC-UxT" secondAttribute="trailing" id="cCP-TG-VfG"/>
                             <constraint firstItem="3R4-TW-uxy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="h3o-qG-tx7"/>
